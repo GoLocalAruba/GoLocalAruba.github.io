@@ -1,0 +1,238 @@
+ul.chbs-demo-menu
+{
+	padding:0px;
+	font-size:0px;
+	list-style-type:none;
+	margin:0px 0px 20px 0px;
+}
+
+	ul.chbs-demo-menu li
+	{
+		padding:0px;
+		display:inline-block;
+		margin:0px 31px 10px 0px;
+	}
+
+	ul.chbs-demo-menu li:last-child
+	{
+		margin-right:0px;
+	}
+
+		ul.chbs-demo-menu li a
+		{
+			color:#6F7687;
+			display:block;
+			font-size:15px;
+			font-weight:700;
+			line-height:24px;
+			border-radius:5px;
+			font-family:'Lato';
+			white-space:nowrap;
+			text-decoration:none;
+			padding:0px 0px 2px 0px;
+			transition:color 0.2s ease 0s;
+		}
+
+		ul.chbs-demo-menu li:first-child a
+		{
+			color:#232732;
+			pointer-events:none;
+		}
+
+		ul.chbs-demo-menu li:first-child a::after
+		{
+			display:none;
+		}
+
+		ul.chbs-demo-menu li a::after
+		{
+			width:100%;
+			height:2px;
+			content:"";
+			display:block;
+			position:relative;
+			background:#232732;
+			transform:scaleX(0);
+			transform-origin:left;
+			transition:transform 0.2s ease 0s;
+		}
+
+		ul.chbs-demo-menu li:not(:first-child):hover a
+		{
+			color:#232732;
+		}
+
+		ul.chbs-demo-menu li:hover a::after
+		{
+			transform:scaleX(1);
+		}
+
+		ul.chbs-demo-menu li.current_page_item a,
+		ul.chbs-demo-menu li.current-chbs-demo-menu-item a
+		{
+			transform:scaleX(1);
+			color:#232732;
+		}
+
+		ul.chbs-demo-menu li.current_page_item a::after,
+		ul.chbs-demo-menu li.current-chbs-demo-menu-item a::after
+		{
+			transform:scaleX(1);
+		}
+
+div.chbs-demo-description
+{
+	display:flex;
+	row-gap:30px;
+	padding:30px;
+	color:#4B515A;
+	flex-wrap:wrap;
+	font-size:14px;
+	font-weight:400;
+	column-gap:20px;
+	line-height:26px;
+	border-radius:5px;
+	font-family:'Lato';
+	flex-direction:row;
+	margin-bottom:50px;
+	background-color:#F5F6F7;
+}
+
+	div.chbs-demo-description ul
+	{
+		margin:0px;
+		padding:0px;
+		flex-grow:1;
+		display:flex;
+		list-style:none;
+		flex-direction:column;
+		width:calc(25% - 20px);
+	}
+	
+		div.chbs-demo-description ul li
+		{
+			margin:0px;
+			padding:0px;
+		}
+	
+		div.chbs-demo-description ul li:not(:first-child)::before
+		{
+			color:#FF700A;
+			content:'\2022';
+			margin:0px 6px 0px 0px;
+		}
+
+		div.chbs-demo-description ul li:first-child
+		{
+			color:#FF700A;
+			font-weight:700;
+			font-family:'Lato';
+		}
+		
+		div.chbs-demo-description.chbs-demo-description-style-1 ul li:first-child,
+		div.chbs-demo-description.chbs-demo-description-style-1 ul li:not(:first-child)::before
+		{
+			color:#8171D0;
+		}
+		
+		div.chbs-demo-description.chbs-demo-description-style-2 ul li:first-child,
+		div.chbs-demo-description.chbs-demo-description-style-2 ul li:not(:first-child)::before
+		{
+			color:#3FBA73;
+		}		
+		
+		div.chbs-demo-description.chbs-demo-description-style-3 ul li:first-child,
+		div.chbs-demo-description.chbs-demo-description-style-3 ul li:not(:first-child)::before
+		{
+			color:#11B5B7;
+		}			
+		
+		div.chbs-demo-description.chbs-demo-description-style-4 ul li:first-child,
+		div.chbs-demo-description.chbs-demo-description-style-4 ul li:not(:first-child)::before
+		{
+			color:#F1A400;
+		}			
+		
+		div.chbs-demo-description.chbs-demo-description-style-5 ul li:first-child,
+		div.chbs-demo-description.chbs-demo-description-style-5 ul li:not(:first-child)::before
+		{
+			color:#E44E65;
+		}	
+		
+		div.chbs-demo-description.chbs-demo-description-style-6 ul li:first-child,
+		div.chbs-demo-description.chbs-demo-description-style-6 ul li:not(:first-child)::before
+		{
+			color:#3379C8;
+		}			
+
+			div.chbs-demo-description ul li em
+			{
+				font-style:normal;
+			}
+
+			div.chbs-demo-description ul li em::before
+			{
+				content:"'";
+			}
+
+			div.chbs-demo-description ul li em::after
+			{
+				content:"'";
+			}
+	
+@media screen and (max-width:1009px)
+{
+	ul.chbs-demo-menu
+	{
+		text-align:center;
+	}
+		
+	ul.chbs-demo-menu li
+	{
+		margin-right:13px;
+		margin-left:13px;
+	}
+		
+	ul.chbs-demo-menu li:last-child
+	{
+		margin-right:13px;
+	}
+		
+	ul.chbs-demo-menu li a
+	{
+		font-size:14px;
+	}
+		
+	ul.chbs-demo-menu li a::after
+	{
+		top:0;
+	}
+		
+	div.chbs-demo-description
+	{
+		font-size:14px;
+		line-height:24px;
+		padding:23px 30px 26px;
+	}
+		
+	div.chbs-demo-description ul
+	{
+		width:calc(50% - 20px);
+	}
+}
+
+@media screen and (max-width:767px)
+{
+	div.chbs-demo-description
+	{
+		padding:13px 20px 16px;
+	}
+}
+
+@media screen and (max-width:479px)
+{
+	div.chbs-demo-description ul
+	{
+		width:100%;
+	}
+}

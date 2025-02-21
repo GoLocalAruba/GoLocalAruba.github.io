@@ -1,0 +1,3932 @@
+/* 
+
+-   Base
+-   Font
+-   Icon
+-   Transition
+-   Main
+-   Label
+-   Qtip
+-   Button
+-   Button radio
+-   Button navigation
+-   Selectmenu
+-   Timepicker
+-   Datepicker
+-   Tab
+    -   Tab / Navigation 
+    -   Tab / Panel 
+-   Layout
+    -   Layout / Layout 50x50
+    -   Layout / Layout 33x33x33
+    -   Layout / Layout 25x75
+    -   Layout / Layout 75x25
+-   Main navigation
+    -   Main navigation / Default
+-   Form label group
+-   Form checkbox  
+-   Form field 
+-   Client form
+-   Vehicle filter 
+-   Vehicle list 
+-   Vehicle
+    -   Vehicle / Image 
+    -   Vehicle / Content
+        -   Vehicle / Content / Header  
+            -   Vehicle / Content / Header / Name
+            -   Vehicle / Content / Header / Button
+        -   Vehicle / Content / Price
+        -   Vehicle / Content / Description 
+        -   Vehicle / Content / Meta 
+-   Pagination
+-   Add location 
+-   Remove location 
+-   Google Map
+-   Summary
+-   Summary price
+-   Ride info
+-   Agreement
+-   Coupon
+-   Payment
+-   Booking extra category
+-   Booking extra
+-   Booking complete
+-   Responsive
+    -   Responsive / Layout 
+    -   Responsive / Summary field
+    -   Responsive / Main navigation
+    -   Responsive / Vehicle
+    -   Responsive / Button navigation 
+    -   Responsive / Booking extra
+    -   Responsive / Add location  
+    -   Responsive / Remove location
+    -   Responsive / Form field
+    -   Responsive / Ride info
+-   WooCommerce
+-   WooCommerce Order View
+-   Fancybox
+-   Intl tel input
+-   Widget
+-   Bug fixes 
+*/
+
+/******************************************************************************/
+/* Base                                                                       */
+/******************************************************************************/
+
+.chbs-main *,
+.chbs-datepicker.ui-datepicker,
+.chbs-datepicker.ui-datepicker *,
+.ui-timepicker-wrapper,
+.ui-timepicker-wrapper *,
+.ui-selectmenu-button span.ui-selectmenu-text
+{
+    outline:0;
+    line-height:150%;
+    box-sizing:border-box;
+}
+
+.chbs-main .chbs-clear-fix:after
+{
+	height:0px;
+	clear:both;
+	content:" ";
+	font-size:0px;
+	display:block;
+	visibility:hidden;
+}
+
+* html .chbs-clear-fix
+{
+	zoom:1; 
+} 
+
+html .chbs-main .chbs-list-reset
+{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+	.chbs-main .chbs-list-reset li
+	{
+		margin:0px;
+		padding:0px;
+	}
+
+.chbs-main .chbs-align-right
+{
+    text-align:right;
+}
+
+.chbs-main .chbs-hidden,
+.chbs-main.chbs-hidden,
+.chbs-main .chbs-hidden-by-category
+{
+    display:none !important;
+}
+
+.ui-timepicker-wrapper
+{
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;  
+}
+
+.chbs-datepicker.ui-datepicker,
+.ui-autocomplete,
+.ui-selectmenu-menu,
+.ui-timepicker-wrapper,
+.chbs-main .chbs-box-shadow,
+.chbs-main .chbs-payment>li>a:hover,
+.chbs-main .chbs-payment>li>a.chbs-state-selected
+{
+    -webkit-box-shadow:0px 18px 19px -20px rgba(0,0,0,0.1);
+    -moz-box-shadow:0px 18px 19px -20px rgba(0,0,0,0.1);
+    box-shadow:0px 18px 19px -20px rgba(0,0,0,0.1);
+}
+
+.chbs-main .chbs-circle
+{
+    text-align:center;
+    border-width:1px;
+    border-style:solid;
+    border-radius:9999em;
+    display:inline-block;                
+}
+
+.chbs-main img
+{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.chbs-main a,
+.chbs-main a:hover
+{
+    box-shadow:none;
+    text-decoration:none;
+}
+
+.chbs-main label
+{
+    margin-bottom:0px;
+}
+
+.chbs-booking-form-error
+{
+    color:red;
+}
+
+/******************************************************************************/
+/* Font                                                                       */
+/******************************************************************************/
+
+.chbs-main,
+.chbs-main input,
+.chbs-main select,
+.chbs-main textarea,
+.ui-menu .ui-menu-item,
+.ui-timepicker-wrapper,
+.chbs-datepicker.ui-datepicker th,
+.chbs-datepicker.ui-datepicker td,
+.chbs-datepicker.ui-datepicker td a,
+.chbs-datepicker.ui-datepicker td span,
+.chbs-datepicker.ui-datepicker .ui-datepicker-title
+{
+    font-family:'Lato';
+}
+
+.chbs-main,
+.chbs-main .chbs-agreement a,
+.ui-timepicker-wrapper
+{
+    font-size:16px;
+    font-weight:300;
+}
+
+/******************************************************************************/
+/* Icon                                                                       */
+/******************************************************************************/
+    
+@font-face 
+{
+    font-family:'chbs-meta-icon';
+    src:url('./../font/meta-icon.eot');
+    src:url('./../font/meta-icon.eot') format('embedded-opentype'),url('./../font/meta-icon.ttf') format('truetype'),url('./../font/meta-icon.woff') format('woff'),url('./../font/meta-icon.svg?7cbga7') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+[class^="chbs-meta-icon-"],
+[class*=" chbs-meta-icon-"],
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next,
+.chbs-pagination a.chbs-pagination-prev,
+.chbs-pagination a.chbs-pagination-next
+{
+    font-family:'chbs-meta-icon' !important;
+    speak:none;
+    font-style:normal;
+    font-weight:normal;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+.chbs-meta-icon-tick:before
+{
+    content:"\67";
+}
+.chbs-meta-icon-cart:before
+{
+    content:"\68";
+}
+.chbs-meta-icon-minus:before
+{
+    content:"\66";
+}
+.chbs-meta-icon-plus:before
+{
+    content:"\65";
+}
+.chbs-meta-icon-arrow-horizontal-small:before
+{
+    content:"\61";
+}
+.chbs-meta-icon-arrow-vertical-small:before
+{
+    content:"\62";
+}
+.chbs-meta-icon-arrow-horizontal-large:before,
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev:before,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next:before,
+.chbs-pagination a.chbs-pagination-prev:before,
+.chbs-pagination a.chbs-pagination-next:before
+{
+    content:"\63";
+}
+.chbs-meta-icon-arrow-vertical-large:before
+{
+    content:"\64";
+}
+.chbs-meta-icon-bag:before
+{
+    content:"\6c";
+}
+.chbs-meta-icon-bank:before
+{
+    content:"\74";
+}
+.chbs-meta-icon-route:before
+{
+    content:"\69";
+}
+.chbs-meta-icon-wallet:before
+{
+    content:"\6d";
+}
+.chbs-meta-icon-calculator:before
+{
+    content:"\6e";
+}
+.chbs-meta-icon-people:before
+{
+    content:"\6b";
+}
+.chbs-meta-icon-clock:before
+{
+    content:"\6a";
+}
+.chbs-meta-icon-question:before
+{
+    content:"\75";
+}
+
+/******************************************************************************/
+/* Icon 2                                                                     */
+/******************************************************************************/
+    
+@font-face 
+{
+    font-family:'chbs-meta-icon-2';
+    src:url('./../font/meta-icon-2.eot');
+    src:url('./../font/meta-icon-2.eot') format('embedded-opentype'),url('./../font/meta-icon-2.ttf') format('truetype'),url('./../font/meta-icon-2.woff') format('woff'),url('./../font/meta-icon-2.svg?7cbga7') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+[class^="chbs-meta-icon-2-"],
+[class*=" chbs-meta-icon-2-"]
+{
+    font-family:'chbs-meta-icon-2' !important;
+    speak:none;
+    font-style:normal;
+    font-weight:normal;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+.chbs-meta-icon-2-date-1:before
+{
+    content:"\61";
+}
+.chbs-meta-icon-2-time-1:before
+{
+    content:"\62";
+}
+.chbs-meta-icon-2-passengers-1:before
+{
+    content:"\63";
+}
+.chbs-meta-icon-2-suitcase-1:before
+{
+    content:"\65";
+}
+.chbs-meta-icon-2-location-1:before
+{
+    content:"\64";
+}
+
+.chbs-meta-icon-2
+{
+    left:20px;
+    clear:both;
+    display:block;
+    margin-top:6px;
+    position:absolute;
+}
+
+.chbs-meta-icon-2+input[type="text"]
+{
+    padding-left:50px !important;
+}
+
+/******************************************************************************/
+/* Transition                                                                 */
+/******************************************************************************/
+
+.chbs-main .chbs-button.chbs-button-style-1,
+.chbs-main .chbs-button.chbs-button-style-2,
+.chbs-main .chbs-button.chbs-button-style-3,
+.chbs-main .chbs-button.chbs-button-style-1:hover,
+.chbs-main .chbs-button.chbs-button-style-2:hover,
+.chbs-main .chbs-button.chbs-button-style-3:hover,
+.chbs-main .chbs-location-add,
+.chbs-main .chbs-location-remove,
+.chbs-main .chbs-location-add:hover,
+.chbs-main .chbs-location-remove:hover,
+.chbs-main .chbs-form-field .chbs-quantity-section .chbs-quantity-section-button,
+.chbs-main .chbs-form-field .chbs-quantity-section .chbs-quantity-section-button:hover,
+.chbs-main .chbs-show-more-button>a>span+span,
+.chbs-main .chbs-show-more-button>a:hover>span+span,
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next,    
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev.ui-state-hover,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next.ui-state-hover,
+.chbs-pagination a.chbs-pagination-prev,
+.chbs-pagination a.chbs-pagination-prev:hover,
+.chbs-pagination a.chbs-pagination-next,
+.chbs-pagination a.chbs-pagination-next:hover
+{
+    transition:all 150ms ease;
+}
+
+.chbs-main .chbs-show-more-button>a>span,
+.chbs-main .chbs-show-more-button>a:hover>span
+{
+    transition:background-color 150ms ease;
+}
+
+/******************************************************************************/
+/* Main                                                                       */
+/******************************************************************************/
+
+.chbs-main
+{
+    position:relative;
+}
+
+    .chbs-main .chbs-main-content
+    {
+        margin-top:50px;
+    }
+    
+    .chbs-main .chbs-main-content>div
+    {
+        display:none;
+    }
+    
+    .chbs-main .chbs-main-content>div:first-child
+    {
+        display:block;
+    }
+    
+    .chbs-main .chbs-main-content>div>div:last-child
+    {
+        margin-top:50px;
+    }
+
+/******************************************************************************/
+/* Label                                                                      */
+/******************************************************************************/
+
+.chbs-main .chbs-form-field>label,
+.chbs-main .chbs-form-field>label a,
+.chbs-main .chbs-ride-info>div>span:first-child+span
+{
+    font-weight:400;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+.chbs-main .chbs-form-field>label a,
+.chbs-main .chbs-form-field>label a:hover
+{
+    text-decoration:underline;
+}
+
+.chbs-main .chbs-form-field>label a:hover
+{
+    opacity:0.6;
+}
+
+/******************************************************************************/
+/* Qtip         															  */
+/******************************************************************************/
+
+.chbs-main .chbs-tooltip
+{
+    opacity:0.5;
+    cursor:help;
+    font-size:12px;
+}
+
+.chbs-main .chbs-tooltip:hover
+{
+    opacity:1;
+}
+
+.chbs-main .chbs-tooltip[title=""]
+{
+    display:none;
+}
+
+.chbs-main .chbs-tooltip[title=""][oldtitle]
+{
+    display:inline;
+}
+
+.chbs-main .chbs-qtip
+{
+    margin:0px 0px 0px 0px !important;
+}
+
+.chbs-main .chbs-qtip,
+.chbs-main .chbs-notice
+{
+    margin:0px;
+    padding:0px;
+    border:none;
+    box-shadow:none;
+    min-width:200px;
+    border-width:1px;
+    border-style:solid;	
+}
+
+.chbs-main .chbs-notice,
+.chbs-main .chbs-qtip .qtip-content
+{
+    font-size:13px;
+    font-weight:300;
+    padding:8px 15px 10px 15px;
+}
+   
+.chbs-main .chbs-notice
+{
+    width:100%;
+	font-size:15px;
+    margin:0px 0px 40px 0px;
+}
+
+/******************************************************************************/
+/* Button                                                                     */
+/******************************************************************************/
+
+.chbs-main .chbs-button,
+.chbs-main .chbs-button:hover
+{
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.chbs-main .chbs-button.chbs-button-style-1,
+.chbs-main .chbs-button.chbs-button-style-2,
+.chbs-main .chbs-button.chbs-button-style-3
+{
+    font-size:14px;
+    font-weight:400;
+    border-width:2px;
+    border-style:solid;
+    border-radius:90px;
+    text-transform:uppercase;
+    padding:14px 32px 16px 32px;
+}
+
+.chbs-main .chbs-button.chbs-button-style-3
+{
+	padding:8px 16px 8px 16px;
+}
+
+    .chbs-main .chbs-button.chbs-button-step-next>span,
+    .chbs-main .chbs-button.chbs-button-step-prev>span
+    {
+        top:2px;
+        font-size:18px;
+        position:relative;
+        padding-left:12px;
+        display:inline-block;
+    }
+    
+    .chbs-main .chbs-button.chbs-button-step-prev>span
+    {
+        transform:scaleX(-1);
+        -moz-transform:scaleX(-1);
+        -o-transform:scaleX(-1);
+        -webkit-transform:scaleX(-1);
+        transform:scaleX(-1);
+        filter:FlipH;
+        -ms-filter:"FlipH";
+    }
+  
+.chbs-main .chbs-button.chbs-button-step-prev
+{
+    padding:14px 32px 16px 24px;
+}
+
+.chbs-main .chbs-button.chbs-button-step-next
+{
+    padding:14px 24px 16px 32px;
+}
+    
+.chbs-main .chbs-button span.chbs-meta-icon-tick
+{
+    display:none;
+}
+    
+.chbs-main .chbs-button.chbs-state-selected span.chbs-meta-icon-tick
+{
+    display:inline-block;
+}
+
+.chbs-main .chbs-button-widget-submit
+{
+    width:100%;
+}
+
+/******************************************************************************/
+/* Button radio                                                               */
+/******************************************************************************/
+
+.chbs-main .chbs-button-radio>a:first-child
+{
+    border-right:0;
+    padding-right:18px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+
+.chbs-main .chbs-button-radio>a:first-child+a
+{
+    border-left:0;
+    padding-left:18px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;    
+}
+
+    .chbs-main .chbs-button-radio span
+    {
+        float:right;
+        display:block;
+        margin-top:-15px;
+    }
+
+/******************************************************************************/
+/* Button navigation                                                          */
+/******************************************************************************/
+
+.chbs-main .chbs-main-content-navigation-button
+{
+ 
+}
+
+    .chbs-main .chbs-main-content-navigation-button .chbs-button.chbs-button-step-prev
+    {
+        float:left;
+    }
+
+    .chbs-main .chbs-main-content-navigation-button .chbs-button.chbs-button-step-next
+    {
+        float:right;
+    }
+	
+/******************************************************************************/
+/* File upload		                                                          */
+/******************************************************************************/
+
+.chbs-file-upload
+{
+	overflow:hidden;
+	position:relative;
+	display:inline-block;
+}
+
+.chbs-form-field .chbs-file-upload,
+.chbs-form-field .chbs-file-remove
+{
+	margin:10px 0px 20px 20px;
+}
+
+.chbs-form-field .chbs-file-upload
+{
+	margin-bottom:15px;
+}
+
+	.chbs-file-upload>span
+	{	
+		
+	}
+
+	.chbs-file-upload input[type="file"]
+	{
+		top:0px;
+		left:0px;
+		opacity:0;
+		cursor:pointer;
+		position:absolute;
+		font-size:200px !important;
+	}
+
+.chbs-form-field .chbs-file-remove
+{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+	.chbs-form-field .chbs-file-remove>span
+	{
+		display:table-cell;
+	}
+	
+	.chbs-form-field .chbs-file-remove>span:first-child
+	{
+		padding-right:15px;
+	}
+	
+		.chbs-form-field .chbs-file-remove>span:first-child>span
+		{
+			font-weight:bold;
+			padding-left:5px;
+		}
+
+/******************************************************************************/
+/* Selectmenu                                                                 */
+/******************************************************************************/
+
+.chbs-main .ui-selectmenu-button
+{
+    display:block;
+    width:100% !important;
+    padding:4px 20px 19px 20px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+{
+    .chbs-main .ui-selectmenu-button
+    {
+        padding-bottom:15px;
+    }
+}
+
+    .chbs-main .ui-selectmenu-button .ui-selectmenu-text
+    {
+        padding:1px 0px 0px 0px;
+    }
+    
+    .chbs-main .ui-selectmenu-button .chbs-meta-icon-arrow-vertical-large
+    {
+        float:right;
+        margin-top:5px;
+        transform:scaleY(-1);
+    }
+    
+.ui-menu
+{
+    padding:0px;
+}
+
+    .ui-menu .ui-menu-item
+    {
+        font-size:16px;
+        font-weight:400;
+        border-style:solid;
+        padding:10px 20px 10px 20px;
+        border-width:1px 0px 0px 0px;
+    }
+    
+    .ui-menu .ui-menu-item:first-child
+    {
+        border-width:0px;
+    }
+    
+    .ui-menu .ui-state-focus,
+    .ui-menu .ui-state-active
+    {
+        margin:0px;
+    }
+    
+    .ui-menu .ui-state-disabled
+    {
+        display:none;
+    }
+    
+.ui-autocomplete,
+.ui-selectmenu-menu
+{
+    max-height:204px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    border-width:1px;
+    border-style:solid;
+}
+
+/******************************************************************************/
+/* Timepicker                                                                 */
+/******************************************************************************/
+  
+.ui-timepicker-wrapper
+{
+    opacity:0;
+    z-index:2;
+    height:226px;
+    max-height:226px;
+    margin-left:-1px;
+}
+
+    .ui-timepicker-wrapper .ui-timepicker-list
+    {
+        
+    }
+    
+        .ui-timepicker-wrapper .ui-timepicker-list>li
+        {
+            font-size:16px;
+            font-weight:400;
+            border-style:solid;
+            padding:10px 20px 10px 20px;
+            border-width:1px 0px 0px 0px;
+        }
+        
+            .ui-timepicker-wrapper .ui-timepicker-list>li:first-child
+            {
+                border-width:0px;
+            }
+ 
+.ui-timepicker-disabled
+{
+	display:none;
+}
+			
+/******************************************************************************/
+/* Datepicker                                                                 */
+/******************************************************************************/            
+
+.chbs-datepicker.ui-datepicker
+{
+    z-index:3;
+    width:auto;
+    margin-left:-1px;
+    border-width:1px;
+    border-style:solid;
+    padding:20px 18px 30px 17px;
+}
+
+	.chbs-datepicker.ui-datepicker .ui-datepicker-header
+	{
+		background:none;
+	}
+
+    .chbs-datepicker.ui-datepicker .ui-datepicker-title
+    {
+        margin:0px;
+        font-size:18px;
+        font-weight:700;
+        line-height:24px;
+    }
+    
+    .chbs-datepicker.ui-datepicker thead
+    {
+        border-style:solid;
+        border-width:0px 0px 1px 0px;
+    }
+    
+    .chbs-datepicker.ui-datepicker tbody
+    {
+        top:10px;
+        position:relative;
+    }
+    
+    .chbs-datepicker.ui-datepicker th,
+    .chbs-datepicker.ui-datepicker td,
+    .chbs-datepicker.ui-datepicker td a,
+    .chbs-datepicker.ui-datepicker td span
+    {
+        line-height:1;
+    }
+    
+    .chbs-datepicker.ui-datepicker th
+    {
+        font-size:14px;
+        font-weight:400;
+        line-height:26px;
+        text-align:center;
+        text-transform:uppercase;
+        padding:20px 0px 20px 0px;
+    }
+    
+    .chbs-datepicker.ui-datepicker td
+    {
+        padding:0px;
+    }
+    
+        .chbs-datepicker.ui-datepicker td,
+        .chbs-datepicker.ui-datepicker td a
+        {
+            font-size:16px;
+        }
+    
+        .chbs-datepicker.ui-datepicker td a,
+        .chbs-datepicker.ui-datepicker td span
+        {
+            width:55px;
+            height:55px;
+            padding:0px;
+            line-height:54px;
+            text-align:center;
+        }
+        
+        .chbs-datepicker.ui-datepicker td a.ui-state-hover
+        {
+            line-height:50px;
+            border-width:2px;
+            border-style:solid;
+            border-radius:9999em;
+        }
+        
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next
+{
+    width:40px;
+    height:40px;
+    display:block;
+    cursor:pointer;
+    line-height:40px;
+    border-width:1px;
+    text-align:center;
+    border-style:solid;
+    border-radius:9999em;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next,
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev-hover,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next-hover
+{
+    top:0px;
+    text-decoration:none;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev,
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev-hover
+{
+    left:0px;
+    margin-left:7px;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-next,
+.chbs-datepicker.ui-datepicker .ui-datepicker-next-hover
+{
+    right:0px;
+    margin-right:7px;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev
+{
+    transform:scaleX(-1);
+}
+
+/******************************************************************************/
+/* Preloader                                                                  */
+/******************************************************************************/    
+
+#chbs-preloader,
+#chbs-preloader>div
+{
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:100;
+    display:none;
+    cursor:not-allowed;
+    position:absolute;
+}
+
+    #chbs-preloader>div
+    {
+        display:block;
+        background-repeat:no-repeat;
+        background-position:center center;
+    }
+
+/******************************************************************************/
+/* Preloader 1                                                                */
+/******************************************************************************/   
+
+.chbs-preloader-1
+{
+    width:100%;
+    height:120px;
+    padding:28px;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-image:url('./../media/image/public/preloader-1.gif');
+}
+
+/******************************************************************************/
+/* Tab                                                                        */
+/******************************************************************************/
+
+.chbs-main .chbs-tab.ui-tabs
+{
+    padding:0px;
+}
+
+    /**************************************************************************/
+    /* Tab / Navigation                                                       */
+    /**************************************************************************/
+
+    .chbs-main .chbs-tab.ui-tabs .ui-tabs-nav
+    {
+        z-index:2;
+        width:100%;
+        padding:0px;
+        position:relative;
+    }
+    
+        .chbs-main .chbs-tab.ui-tabs .ui-tabs-nav>li
+        {
+            margin:0px;
+            width:33.33333333%;
+        }
+        
+        .chbs-main .chbs-tab.ui-tabs .ui-tabs-nav>li.ui-tabs-active
+        {
+            padding:0px;
+        }
+        
+            .chbs-main .chbs-tab.ui-tabs .ui-tabs-nav>li>a
+            {
+                width:100%;
+                padding:20px;
+                display:block;
+                font-size:13px;
+                font-weight:400;
+                text-align:center;
+                border-style:solid;
+                text-transform:uppercase;
+                border-width:1px 0px 0px 1px;
+            }
+            
+            rs-module .chbs-main .chbs-tab.ui-tabs .ui-tabs-nav>li>a
+            {
+                text-align:center !important;
+            }
+            
+            .chbs-main .chbs-tab.ui-tabs .ui-tabs-nav>li:last-child>a
+            {
+                border-right-width:1px;
+            }
+            
+            .chbs-main .chbs-tab.ui-tabs .ui-tabs-nav>li+li>a
+            {
+                
+            }
+            
+    /**************************************************************************/
+    /* Tab / Panel                                                            */
+    /**************************************************************************/
+            
+    .chbs-main .chbs-tab.ui-tabs .ui-tabs-panel
+    {
+        z-index:1;
+        padding:0px;
+        position:relative;
+        border-style:solid;
+        border-width:2px 0px 0px 0px;
+    }
+      
+/******************************************************************************/
+/* Layout                                                                     */
+/******************************************************************************/
+
+    /**************************************************************************/
+    /* Layout / Layout 50x50                                                  */
+    /**************************************************************************/
+
+    .chbs-main .chbs-layout-50x50
+    {
+        
+    }
+    
+        .chbs-main .chbs-layout-50x50>.chbs-layout-column-left,
+        .chbs-main .chbs-layout-50x50>.chbs-layout-column-right
+        {
+            width:48.36066%;
+        }
+    
+        .chbs-main .chbs-layout-50x50>.chbs-layout-column-left
+        {
+            float:left;
+        }
+        
+        .chbs-main .chbs-layout-50x50>.chbs-layout-column-right
+        {
+            float:right;
+        }
+        
+    /**************************************************************************/
+    /* Layout / Layout 33x33x33                                               */
+    /**************************************************************************/
+        
+    .chbs-main .chbs-layout-33x33x33
+    {
+        
+    }
+    
+        .chbs-main .chbs-layout-33x33x33>.chbs-layout-column-left,
+        .chbs-main .chbs-layout-33x33x33>.chbs-layout-column-center,
+        .chbs-main .chbs-layout-33x33x33>.chbs-layout-column-right
+        {
+            float:left;
+            width:31.1477%;
+        }
+    
+        .chbs-main .chbs-layout-33x33x33>.chbs-layout-column-left,
+        .chbs-main .chbs-layout-33x33x33>.chbs-layout-column-center
+        {
+            margin-right:3.2784%;
+        }
+
+    /**************************************************************************/
+    /* Layout / Layout 25x75                                                  */
+    /**************************************************************************/
+
+    .chbs-main .chbs-layout-25x75
+    {
+        
+    }
+    
+        .chbs-main .chbs-layout-25x75>.chbs-layout-column-left
+        {
+            float:left;
+            width:22.5410%;
+        }
+
+        .chbs-main .chbs-layout-25x75>.chbs-layout-column-right
+        {
+            float:right;
+            width:73.7705%;
+        }
+        
+    /**************************************************************************/
+    /* Layout / Layout 75x25                                                  */
+    /**************************************************************************/
+
+    .chbs-main .chbs-layout-75x25
+    {
+        
+    }
+    
+        .chbs-main .chbs-layout-75x25>.chbs-layout-column-left
+        {
+            float:left;
+            width:73.7705%;
+        }
+
+        .chbs-main .chbs-layout-75x25>.chbs-layout-column-right
+        {
+            float:right;
+            width:22.5410%;
+        }
+
+/******************************************************************************/
+/* Main navigation                                                            */
+/******************************************************************************/
+
+    /**************************************************************************/
+    /* Main navigation / Default                                              */
+    /**************************************************************************/
+
+    .chbs-main .chbs-main-navigation-default
+    {
+        display:block;
+    }
+
+        .chbs-main .chbs-main-navigation-default>ul
+        {
+
+        }
+
+            .chbs-main .chbs-main-navigation-default>ul>li
+            {
+                width:25%;
+                float:left;
+                position:relative;  
+                text-align:center;
+            }
+            
+            .chbs-main .chbs-main-navigation-default[data-step-count="3"]>ul>li
+            {
+                width:33.333333%;
+            }
+			
+            .chbs-main .chbs-main-navigation-default[data-step-count="2"]>ul>li
+            {
+                width:50%;
+            }
+
+                .chbs-main .chbs-main-navigation-default>ul>li>div
+                {
+                    left:50%;
+                    top:25px;
+                    z-index:1;
+                    height:1px;
+                    width:100%;
+                    position:absolute;
+                }
+                
+                .chbs-main .chbs-main-navigation-default>ul>li:last-child>div
+                {
+                    display:none;
+                }
+                
+                .chbs-main .chbs-main-navigation-default>ul>li>a
+                {
+                    display:block;
+                }
+
+                .chbs-main .chbs-main-navigation-default>ul>li>a,
+                .chbs-main .chbs-main-navigation-default>ul>li>a:hover
+                {
+                    text-decoration:none;
+                }
+
+                    .chbs-main .chbs-main-navigation-default>ul>li>a>span
+                    {
+                        display:block;
+                        margin-left:auto;
+                        margin-right:auto; 
+                    }
+
+                    .chbs-main .chbs-main-navigation-default>ul>li>a>span:first-child
+                    {
+                        z-index:2;
+                        width:50px;
+                        height:50px;
+                        font-weight:700;
+                        position:relative;
+                        text-align:center;
+                        border-radius:100%;
+						outline:solid 10px transparent;
+                    }
+      
+                        .chbs-main .chbs-main-navigation-default>ul>li>a>span:first-child>span:first-child
+                        {
+                            font-size:18px;
+                            line-height:50px;
+                        }
+                        
+                        .chbs-main .chbs-main-navigation-default>ul>li.chbs-state-completed>a>span:first-child>span:first-child
+                        {
+                            display:none;
+                        }
+                        
+                        .chbs-main .chbs-main-navigation-default>ul>li>a>span:first-child>span.chbs-meta-icon-tick
+                        {
+                            display:none;
+                            font-size:24px;
+                            line-height:52px;
+                        }
+                        
+                        .chbs-main .chbs-main-navigation-default>ul>li.chbs-state-completed>a>span:first-child>span.chbs-meta-icon-tick
+                        {
+                            display:block;
+                        }
+
+                    .chbs-main .chbs-main-navigation-default>ul>li>a>span:first-child+span
+                    {
+                        font-size:15px;
+                        font-weight:400;
+                        margin-top:15px;
+                    }
+                
+    /**************************************************************************/
+    /* Main navigation / Responsive                                           */
+    /**************************************************************************/
+
+    .chbs-main .chbs-main-navigation-responsive
+    {
+        display:none;
+    }
+                    
+/******************************************************************************/
+/* Form label group                                                           */
+/******************************************************************************/               
+
+.chbs-main .chbs-form-label-group
+{
+    display:block;
+    font-size:14px;
+    font-weight:400;
+    text-transform:uppercase;
+    padding:14px 21px 15px 21px;
+}  
+
+/******************************************************************************/
+/* Form checkbox                                                              */
+/******************************************************************************/
+
+.chbs-main .chbs-form-checkbox
+{
+    float:left;
+    width:30px;
+    height:30px;
+    display:block;
+    cursor:pointer;
+    margin-top:-5px;
+    margin-right:20px;
+    border-width:2px;
+    border-style:solid;
+}
+
+    .chbs-main .chbs-form-checkbox>.chbs-meta-icon-tick
+    {
+        display:none;
+        font-size:22px;
+        line-height:28px;
+        text-align:center;
+    }
+    
+    .chbs-main .chbs-form-checkbox.chbs-state-selected>.chbs-meta-icon-tick
+    {
+        display:block;
+    }
+    
+.chbs-main .chbs-form-checkbox+input[type="checkbox"]
+{
+    opacity:0;
+}
+
+/******************************************************************************/
+/* Form field                                                                 */
+/******************************************************************************/
+
+.chbs-main .chbs-form-field
+{
+    margin-top:-1px;
+    position:relative;
+    border-style:solid;
+    padding:16px 0px 0px 0px;
+    border-width:1px 1px 1px 1px;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-waypoint-duration
+{
+	border-top-style:dotted;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-width-100,
+.chbs-main .chbs-form-field.chbs-form-field-width-50,
+.chbs-main .chbs-form-field.chbs-form-field-width-33,
+.chbs-main .chbs-form-field.chbs-form-field-width-25
+{
+    float:left;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-width-50,
+.chbs-main .chbs-form-field.chbs-form-field-width-33,
+.chbs-main .chbs-form-field.chbs-form-field-width-25
+{
+    float:left;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-width-100
+{
+    width:100%;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-width-50
+{
+    width:50%;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-width-33
+{
+    width:33.333333%;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-width-25
+{
+    width:25%;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-width-50+.chbs-form-field-width-50,
+.chbs-main .chbs-form-field.chbs-form-field-width-33+.chbs-form-field-width-33,
+.chbs-main .chbs-form-field.chbs-form-field-width-25+.chbs-form-field-width-25
+{
+    border-left-width:0px;
+}
+
+    .chbs-main .chbs-form-field>label
+    {
+        clear:both;
+        margin-bottom:7px;
+        margin-left:20px;
+        display:inline-block;
+    }    
+    
+    .chbs-main .chbs-form-field input,
+    .chbs-main .chbs-form-field textarea,
+    .chbs-main .chbs-form-field .ui-selectmenu-button
+    {
+        width:100%;
+    }
+    
+    .chbs-main .chbs-form-field input,
+    .chbs-main .chbs-form-field select,
+    .chbs-main .chbs-form-field textarea
+    {
+		padding-top:0px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+		line-height:31px;
+    }
+    
+    rs-module .chbs-main .chbs-form-field input,
+    rs-module .chbs-main .chbs-form-field select,
+    rs-module .chbs-main .chbs-form-field textarea
+    {
+        line-height:166.66667% !important;
+    }
+    
+    .chbs-main .chbs-form-field input,
+    .chbs-main .chbs-form-field textarea,
+    .chbs-main .chbs-form-field .ui-selectmenu-button
+    {
+        border:none;
+    }
+    
+    .chbs-main .chbs-form-field input,
+    .chbs-main .chbs-form-field textarea,
+    .chbs-main .chbs-form-field .ui-selectmenu-button,
+    .ui-selectmenu-menu,
+    .ui-autocomplete
+    {
+        font-size:18px;
+        font-weight:700;
+    }
+
+    .chbs-main .chbs-form-field.chbs-form-field-location-switch>input
+    {
+        padding-right:110px;
+    }
+    
+    .chbs-main .chbs-form-field textarea
+    {
+        resize:none;
+        overflow:auto;
+    }
+    
+    .chbs-main .chbs-form-field input[type="checkbox"]
+    {
+        cursor:pointer;
+    }
+    
+    .chbs-main .chbs-form-field .chbs-quantity-section
+    {
+        position:relative;
+    }
+    
+        .chbs-main .chbs-form-field .chbs-quantity-section .chbs-quantity-section-button
+        {
+            z-index:2;
+            width:30px;
+            height:30px;
+            display:block;
+            font-size:16px;
+            cursor:pointer;
+            line-height:30px;
+            border-width:1px;
+            text-align:center;
+            position:absolute;
+            border-style:solid;
+        }
+        
+        .chbs-main .chbs-form-field .chbs-quantity-section .chbs-quantity-section-button:first-child
+        {
+          
+        }
+        
+        .chbs-main .chbs-form-field .chbs-quantity-section .chbs-quantity-section-button:last-child
+        {
+          
+        }
+        
+        .chbs-main .chbs-form-field .chbs-quantity-section input[type="text"]
+        {
+            
+        }
+    
+/******************************************************************************/
+/* Client form                                                                */
+/******************************************************************************/
+              
+.chbs-client-form
+{
+    
+}
+
+    .chbs-client-form .chbs-client-form-sign-in
+    {
+
+    }
+
+        .chbs-client-form .chbs-client-form-sign-in .chbs-box-shadow+div
+        {
+            margin-top:30px;
+            margin-bottom:30px;
+            text-align:right;
+        }
+        
+            .chbs-client-form .chbs-client-form-sign-in .chbs-box-shadow+div>a
+            {
+                display:inline-block;
+            }
+
+/******************************************************************************/
+/* Vehicle filter                                                             */
+/******************************************************************************/
+                    
+.chbs-main .chbs-vehicle-filter
+{
+    margin-bottom:40px;
+}
+
+/******************************************************************************/
+/* Vehicle list                                                               */
+/******************************************************************************/
+
+.chbs-main .chbs-vehicle-list
+{
+   
+}
+
+    .chbs-main .chbs-vehicle-list>ul
+    {
+        
+    }
+
+        .chbs-main .chbs-vehicle-list>ul>li
+        {
+            padding-bottom:30px;
+            margin-bottom:30px;
+            border-style:solid;
+            border-width:0px 0px 1px 0px;
+        }
+        
+        .chbs-main .chbs-vehicle-list>ul>li:last-child
+        {
+            border-bottom-width:0px;
+        }
+        
+/******************************************************************************/
+/* Vehicle                                                                    */
+/******************************************************************************/
+
+.chbs-main .chbs-vehicle
+{
+    
+}
+
+    /**************************************************************************/
+    /* Vehicle / Image                                                        */
+    /**************************************************************************/
+
+    .chbs-main .chbs-vehicle .chbs-vehicle-image
+    {
+        opacity:0;
+        float:left;
+        max-width:300px;
+    }
+    
+    .chbs-main .chbs-vehicle .chbs-vehicle-image.chbs-vehicle-image-has-gallery
+    {
+        cursor:pointer;
+    }
+    
+        .chbs-main .chbs-vehicle .chbs-vehicle-image>img
+        {
+            max-width:100%;
+        }
+        
+    /**************************************************************************/
+    /* Vehicle / Gallery                                                      */
+    /**************************************************************************/
+
+    .chbs-main .chbs-vehicle .chbs-vehicle-gallery
+    {
+        display:none;
+    }
+    
+    /**************************************************************************/
+    /* Vehicle / Content                                                      */
+    /**************************************************************************/    
+    
+    .chbs-main .chbs-vehicle .chbs-vehicle-content
+    {
+        
+    }
+    
+    .chbs-main .chbs-vehicle .chbs-vehicle-image+.chbs-vehicle-content,
+    .chbs-main .chbs-vehicle .chbs-vehicle-image+.chbs-vehicle-gallery+.chbs-vehicle-content
+    {
+        margin-left:340px;
+    }
+        
+        /**********************************************************************/
+        /* Vehicle / Content / Header                                         */
+        /**********************************************************************/   
+    
+        .chbs-main .chbs-vehicle .chbs-vehicle-content>div.chbs-vehicle-content-header
+        {
+            height:100%;
+            overflow:hidden;
+            text-align:right;
+        }
+        
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>div.chbs-vehicle-content-header>a,
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>div.chbs-vehicle-content-header>span
+            {
+                display:inline-block;
+            }
+        
+            /******************************************************************/
+            /* Vehicle / Content / Header / Name                              */
+            /******************************************************************/   
+        
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>div.chbs-vehicle-content-header>span
+            {
+                width:65%;
+                float:left;
+                display:block;
+                font-size:18px;
+                font-weight:700; 
+                text-align:left;
+            }
+            
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>div.chbs-vehicle-content-header>span:first-child
+            {
+                padding-bottom:15px;
+            }
+            
+            /******************************************************************/
+            /* Vehicle / Content / Header / Button                            */
+            /******************************************************************/ 
+
+            .chbs-main .chbs-vehicle-content>div.chbs-vehicle-content-header>.chbs-button
+            {
+                padding:14px 32px 16px 32px;
+            }
+    
+        /**********************************************************************/
+        /* Vehicle / Content / Price                                          */
+        /**********************************************************************/          
+        
+        .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price
+        {
+            margin-top:5px;
+			display:inline-block;
+        }
+
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price>span
+            {
+                display:block;
+            }
+            
+                .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price>span>span:first-child
+                {
+                    line-height:1;
+                    font-size:40px;
+                    font-weight:400; 
+                }
+
+        /**********************************************************************/
+        /* Vehicle / Content / Bid                                          */
+        /**********************************************************************/ 
+            
+		.chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price-bid
+		{
+			top:-8px;
+			margin-left:10px;
+			position:relative;
+			display:inline-block;
+		}
+		
+			.chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price-bid>div:first-child
+			{
+				
+			}
+			
+				.chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price-bid>div:first-child>a
+				{
+					
+				}
+			
+			.chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price-bid>div:first-child+div
+			{
+				
+			}
+			
+				.chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price-bid>div+div>input
+				{
+					width:100px;
+					border-width:1px;
+					border-style:solid;
+					padding:7px 10px 7px 10px;
+				}
+				
+				.chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price-bid>div+div>input+a
+				{
+					margin-left:5px;
+				}
+				
+				.chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-price-bid>div+div>input+a+a
+				{
+					
+				}
+			
+        /**********************************************************************/
+        /* Vehicle / Content / Description                                    */
+        /**********************************************************************/   
+          
+        .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description
+        {
+            height:0px;
+            overflow:hidden;
+            width:100% !important;
+        }
+        
+        .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description.chbs-state-open
+        {
+            height:auto;
+        }
+        
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div
+            {
+                margin:40px 0px 0px 0px;
+            }
+        
+                .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>p
+                {
+                    margin:0px;
+                }
+
+                .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>p:first-child
+                {
+                    padding:0px;
+                }
+
+                .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute
+                {
+                    padding:20px;
+                    margin-top:40px;
+                }
+
+                    .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul
+                    {
+                        float:left;
+                        width:47.5%;
+                    }
+
+                    .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul+ul
+                    {
+                        float:right;
+                    }
+
+                        .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul>li
+                        {
+                            border-style:solid;
+                            padding:10px 0px 10px 0px;
+                            border-width:0px 0px 1px 0px;
+                        }
+
+                        .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul>li:last-child
+                        {
+                            border-bottom-width:0px;
+                        }
+
+                            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul>li>div
+                            {
+                                width:49%;
+                                font-weight:400;
+                                line-height:inherit;
+                            }
+
+                            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul>li>div:first-child
+                            {
+                                float:left;
+                                font-size:12px;
+                                text-transform:uppercase;
+                            }
+
+                            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul>li>div:first-child+div
+                            {
+                                float:right;
+                                font-size:15px;
+                                text-align:right;
+                            }
+
+        /**********************************************************************/
+        /* Vehicle / Content / Meta                                           */
+        /**********************************************************************/     
+        
+        .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta
+        {
+            width:100%;
+            display:table;
+            margin-top:35px;
+        }
+        
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta>div
+            {
+                display:table-row;
+            }
+            
+                .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta>div>div
+                {
+                    width:40%;
+                    display:table-cell;
+                    vertical-align:middle;
+                }
+                
+                .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info
+                {
+                    width:60%;
+                    text-align:right;
+                }
+                
+                    .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div
+                    {
+                        float:right;
+                    }
+                
+                    .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span
+                    {
+                        float:left;
+                        display:inline;
+                    }
+                    
+                    .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span.chbs-circle
+                    {
+						width:30px;
+						height:30px;
+                        font-size:14px;
+						line-height:28px;
+                    }
+                                
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-meta-icon-bag,
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-meta-icon-people
+            {
+                 font-size:48px;
+                 margin-top:-12px;
+            }
+            
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-meta-icon-bag
+            {
+                margin-left:10px;
+            }
+            
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta span
+            {
+                margin-right:20px;
+            }
+                        
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta span:last-child
+            {
+                margin-right:0px;
+            }
+                    
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-vehicle-more-info,
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-vehicle-bag-count,
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-vehicle-passenger-count
+            {
+                line-height:48px;
+            }
+
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-vehicle-bag-count>span:first-child,
+            .chbs-main .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-vehicle-passenger-count>span:first-child
+            {
+                font-size:48px;
+            }
+			
+/******************************************************************************/
+/* Show more button                                                           */
+/******************************************************************************/   
+
+.chbs-main .chbs-show-more-button
+{
+	display:inline-block;
+}
+
+	.chbs-main .chbs-show-more-button>a
+	{
+		font-size:14px;
+		font-weight:400;
+		line-height:48px;
+		text-transform:uppercase;		
+	}
+	
+	.chbs-main .chbs-show-more-button>a,
+	.chbs-main .chbs-show-more-button> a:hover
+	{
+		text-decoration:none;
+	}
+	
+		.chbs-main .chbs-show-more-button>a span
+		{
+			margin-right:12px;
+		}
+
+		.chbs-main .chbs-show-more-button>a>span.chbs-circle
+		{
+			top:8px;
+            width:30px;
+			height:30px;
+			line-height:28px;
+			font-size:28px;
+			position:relative;
+			transform:scaleY(-1);
+		}
+
+		.chbs-main .chbs-show-more-button>a.chbs-state-selected>span.chbs-circle
+		{
+			transform:scaleY(1);
+		}
+
+		.chbs-main .chbs-show-more-button>a>span:first-child+span+span,
+		.chbs-main .chbs-show-more-button>a.chbs-state-selected>span:first-child+span
+		{
+			display:none;
+		}
+
+		.chbs-main .chbs-show-more-button>a.chbs-state-selected>span:first-child+span+span
+		{
+			display:inline-block;
+		}
+		
+/******************************************************************************/
+/* Pagination                                                                 */
+/******************************************************************************/            
+      
+.chbs-pagination
+{
+    margin-top:30px;
+    text-align:center;
+}
+
+    .chbs-pagination a
+    {
+        width:40px;
+        height:40px;
+        font-size:18px;
+        border-radius:100%;
+        display:inline-block;
+        line-height:40px !important;
+    }
+    
+    .chbs-pagination a.chbs-pagination-prev
+    {
+        transform:scaleX(-1);
+    }
+    
+    .chbs-pagination a.chbs-pagination-next
+    {
+        
+    }
+                
+/******************************************************************************/
+/* Add location                                                               */
+/* Remove location                                                            */
+/******************************************************************************/
+
+.chbs-main .chbs-location-add,
+.chbs-main .chbs-location-remove
+{
+    top:29px;
+    width:36px;
+    height:36px;
+    display:block;
+    cursor:pointer;
+    line-height:32px;
+    border-width:1px;
+    text-align:center;
+    position:absolute;
+    border-style:solid;
+    font-size:32px;
+}
+
+.chbs-main .chbs-location-add
+{
+    right:20px;
+}
+
+.chbs-main .chbs-location-remove
+{
+    display:none;
+}
+
+.chbs-main .chbs-form-field.chbs-form-field-location-switch+.chbs-form-field.chbs-form-field-location-switch .chbs-location-remove,
+.chbs-main .chbs-form-field.chbs-form-field-waypoint-duration+.chbs-form-field.chbs-form-field-location-switch .chbs-location-remove
+{
+    right:55px;
+    display:block;
+}
+
+/******************************************************************************/
+/* Google Map                                                                 */
+/******************************************************************************/
+
+.chbs-main #chbs_google_map
+{
+    width:100%;
+}
+
+.chbs-main .chbs-google-map #chbs_google_map
+{
+    height:420px;
+}
+
+.chbs-main .chbs-google-map-summary #chbs_google_map
+{
+    height:250px;
+}
+
+/******************************************************************************/
+/* Summary                                                                    */
+/******************************************************************************/
+
+.chbs-main .chbs-summary
+{
+    padding:28px 20px 20px 20px;
+}
+
+.chbs-main .chbs-summary+.chbs-summary
+{
+    margin-top:40px;
+}
+
+    .chbs-main .chbs-summary .chbs-summary-header
+    {
+        padding-bottom:5px;
+    }
+    
+        .chbs-main .chbs-summary .chbs-summary-header>h4
+        {
+            margin:0px;
+            font-size:18px;
+            font-weight:700;
+            line-height:30px;
+            text-transform:none;
+            display:inline-block;
+        }
+        
+        .chbs-main .chbs-summary .chbs-summary-header>a
+        {
+            float:right;
+            font-size:13px;
+            font-weight:400;
+            border-width:1px;
+            border-style:solid;
+            border-radius:999em;
+            display:inline-block;
+            padding:3px 12px 3px 12px;
+        }
+        
+        .chbs-main .chbs-summary .chbs-summary-header>a,
+        .chbs-main .chbs-summary .chbs-summary-header>a:hover
+        {
+            text-decoration:none;
+        }
+    
+    .chbs-main .chbs-summary .chbs-summary-field
+    {
+        margin-top:15px;
+        padding-bottom:20px;
+        border-style:solid;
+        border-width:0px 0px 1px 0px;
+    }
+    
+    .chbs-main .chbs-summary .chbs-summary-field:last-child
+    {
+        border:none;
+        padding-bottom:0px;
+    }
+    
+        .chbs-main .chbs-summary .chbs-summary-field .chbs-summary-field-name
+        {
+            font-size:12px;
+            font-weight:400;
+            line-height:26px;
+            margin-bottom:5px;
+            text-transform:uppercase;
+        }
+        
+        .chbs-main .chbs-summary .chbs-summary-field .chbs-summary-field-value
+        {
+            font-size:15px;
+            font-weight:400;
+            line-height:24px;
+        }
+        
+/******************************************************************************/
+/* Summary price element                                                      */
+/******************************************************************************/
+
+.chbs-main .chbs-summary-price-element
+{
+    margin-top:40px;
+}
+
+    .chbs-main .chbs-summary-price-element>div
+    {
+        
+    }
+    
+        .chbs-main .chbs-summary-price-element>div span
+        {
+            font-size:15px;
+            font-weight:400;
+            line-height:24px;            
+        }
+
+        .chbs-main .chbs-summary-price-element>div>span:first-child
+        {
+            
+        }
+        
+        .chbs-main .chbs-summary-price-element>div>span:first-child+span
+        {
+            float:right;
+        }
+        
+        .chbs-main .chbs-summary-price-element>div.chbs-summary-price-element-total
+        {
+            margin-top:20px;
+            padding-top:20px;
+            position:relative;
+            border-style:solid;
+            border-width:1px 0px 0px 0px;       
+        }
+        
+        .chbs-main .chbs-summary-price-element>div.chbs-summary-price-element-total>span,
+        .chbs-main .chbs-summary-price-element>div.chbs-summary-price-element-pay>span
+        {
+            font-size:18px;
+            font-weight:700;
+            line-height:30px;
+            display:inline-block;            
+        }
+        
+        .chbs-main .chbs-summary-price-element>div.chbs-summary-price-element-total>span:first-child+span
+        {
+            top:-1px;
+            right:0px;
+            float:right;
+            padding-top:21px;
+            position:absolute;
+            border-style:solid;
+            border-width:1px 0px 0px 0px;               
+        }
+
+/******************************************************************************/
+/* Ride info                                                                   */
+/******************************************************************************/
+        
+.chbs-main .chbs-ride-info
+{
+    width:100%;
+    display:table;
+    border-style:solid;
+    border-width:0px 1px 1px 1px;
+}
+
+    .chbs-main .chbs-ride-info>div
+    {
+        width:50%;
+        display:table-cell;
+        padding:30px 30px 28px 40px;
+    }
+    
+    .chbs-main .chbs-ride-info>div:first-child
+    {
+        border-style:solid;
+        border-width:0px 1px 0px 0px;
+    }
+    
+        .chbs-main .chbs-ride-info>div>span
+        {
+            float:left;
+        }
+    
+        .chbs-main .chbs-ride-info>div>span:first-child
+        {
+            font-size:48px;
+            margin-top:4px;
+        }
+        
+        .chbs-main .chbs-ride-info>div>span:first-child+span,
+        .chbs-main .chbs-ride-info>div>span:first-child+span+span
+        {
+            margin-left:30px;
+            min-width:51%;
+        }
+        
+        .chbs-main .chbs-ride-info>div>span:first-child+span
+        {
+            font-size:12px;
+        }
+        
+        .chbs-main .chbs-ride-info>div>span:first-child+span+span
+        {
+            font-size:26px;
+            padding-top:4px;
+            font-weight:400;
+        }
+        
+/******************************************************************************/
+/* Payment                                                                    */
+/******************************************************************************/
+
+.chbs-main .chbs-payment-header
+{
+    font-size:18px;
+    font-weight:700;
+    margin-top:70px;
+    line-height:30px;
+    text-align:center;
+    text-transform:none;
+}
+
+.chbs-main .chbs-payment
+{
+	left:-10px;
+	margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+	position:relative;
+    flex-direction:row;
+    align-items:flex-start;
+	width:calc(100% + 20px);
+}
+
+    .chbs-main .chbs-payment>li
+    {
+		margin:10px;
+        height:130px;
+        flex-grow:1;
+        flex-basis:274px;
+    }
+    
+        .chbs-main .chbs-payment>li>a
+        {
+            width:100%;
+            height:100%;
+            padding:1px;
+            display:block;
+            position:relative;
+            text-align:center;
+            border-width:1px;
+            border-style:solid;
+            background-repeat:no-repeat;
+            background-position:center center;
+        }
+                    
+        .chbs-main .chbs-payment>li>a,
+        .chbs-main .chbs-payment>li>a:hover
+        {
+            text-decoration:none;
+        }
+        
+        .chbs-main .chbs-payment>li>a.chbs-payment-background-image
+        {
+            border-width:2px;
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position:center center;
+        }
+        
+            .chbs-main .chbs-payment>li>a>span.chbs-payment-name,
+            .chbs-main .chbs-payment>li>a>span.chbs-meta-icon-bank,
+            .chbs-main .chbs-payment>li>a>span.chbs-meta-icon-wallet
+            {
+                font-size:48px;
+                line-height:130px;
+            }
+            
+            .chbs-main .chbs-payment>li>a.chbs-payment-background-image>span.chbs-payment-name,
+            .chbs-main .chbs-payment>li>a.chbs-payment-background-image>span.chbs-meta-icon-bank,
+            .chbs-main .chbs-payment>li>a.chbs-payment-background-image>span.chbs-meta-icon-wallet
+            {
+                display:none;
+            }
+            
+            .chbs-main .chbs-payment>li>a>span.chbs-payment-name
+            {
+                top:-15px;
+                left:10px;
+                font-size:18px;
+                font-weight:700;
+                position:relative;
+            }
+            
+            .chbs-main .chbs-payment.chbs-payment-woocommerce>li>a>span.chbs-payment-name
+            {
+                top:0px;
+                left:0px;
+            }
+            
+            .chbs-main .chbs-payment>li>a>span.chbs-meta-icon-tick
+            {
+                left:50%;
+                width:38px;
+                height:38px;
+                bottom:-19px;
+                display:none;
+                font-size:18px;
+                line-height:38px;
+                position:absolute;
+                text-align:center;
+                margin-left:-19px;
+                border-radius:9999em;
+            }
+            
+            .chbs-main .chbs-payment>li>a.chbs-state-selected>span.chbs-meta-icon-tick
+            {
+                display:block;
+            }
+            
+        .chbs-main .chbs-payment>li>a,
+        .chbs-main .chbs-payment>li>a:hover
+        {
+            transition:box-shadow 150ms ease;
+        }
+        
+        .chbs-main .chbs-payment>li>a.chbs-state-selected
+        {
+            padding:0px;
+            border-width:2px;
+        }
+        
+        .chbs-main .chbs-payment>li>a.chbs-payment-type-2
+        {
+            background-image:url('./../media/image/public/stripe.png');
+        }
+        
+        .chbs-main .chbs-payment>li>a.chbs-payment-type-3
+        {
+            background-image:url('./../media/image/public/paypal.png');
+        }
+		
+/******************************************************************************/
+/* My location link                                                           */
+/******************************************************************************/     
+        
+.chbs-main .chbs-my-location-link
+{
+	display:none;
+}
+
+/******************************************************************************/
+/* Agreement                                                                  */
+/******************************************************************************/        
+ 
+.chbs-main .chbs-agreement-header
+{
+    font-size:18px;
+    font-weight:700;
+    line-height:30px;
+    margin-top:70px;
+    margin-bottom:30px;
+}
+
+.chbs-agreement
+{
+  
+}
+    
+    .chbs-agreement a,
+    .chbs-agreement a:hover
+    {
+        text-decoration:underline;
+    }
+
+    .chbs-agreement>div
+    {
+        margin-top:15px;
+    }
+    
+        .chbs-agreement>div>.chbs-form-checkbox
+        {
+            margin-top:-2px;
+        }
+
+        .chbs-agreement>div>div
+        {
+            margin-left:50px;
+        }
+        
+/******************************************************************************/
+/* Coupon                                                                     */
+/* Gratuity                                                                   */
+/******************************************************************************/            
+        
+.chbs-main .chbs-gratuity-section,
+.chbs-main .chbs-coupon-code-section
+
+{
+    margin-top:40px;
+}
+
+    .chbs-main .chbs-gratuity-section .chbs-form-field,
+    .chbs-main .chbs-coupon-code-section .chbs-form-field
+    {
+        border-top-width:1px;
+    }
+
+    .chbs-main .chbs-gratuity-section a.chbs-button.chbs-button-style-2,
+    .chbs-main .chbs-coupon-code-section a.chbs-button.chbs-button-style-2
+    {
+        float:right;
+        margin-top:10px;
+        display:inline-block;
+    }
+    
+        .chbs-main .chbs-gratuity-section a.chbs-button.chbs-button-style-2 span,
+        .chbs-main .chbs-coupon-code-section a.chbs-button.chbs-button-style-2 span
+        {
+            display:none;
+        }
+        
+/******************************************************************************/
+/* Booking extra category                                                     */
+/******************************************************************************/
+      
+.chbs-main .chbs-booking-extra-category-list
+{
+    
+}
+
+    .chbs-main .chbs-booking-extra-category-list>div
+    {
+        border-style:solid;
+        border-width:0px 0px 1px 0px;
+    }
+    
+        .chbs-main .chbs-booking-extra-category-list>div>a
+        {
+            display:block;
+            font-size:20px;
+            font-weight:700;
+            line-height:30px;
+            padding:20px 0px 20px 0px;
+        }
+        
+/******************************************************************************/
+/* Booking extra                                                              */
+/******************************************************************************/
+
+.chbs-main .chbs-booking-extra
+{
+	
+}
+
+	.chbs-main .chbs-booking-extra>.chbs-booking-extra-header+div
+	{
+		height:0px;
+		overflow:hidden;		
+	}
+	
+	.chbs-main .chbs-booking-extra>.chbs-booking-extra-header+div.chbs-state-open
+	{
+		height:auto;
+		overflow:auto;
+	}
+
+.chbs-main .chbs-booking-extra-header
+{
+    margin-bottom:40px;
+}
+
+    .chbs-main .chbs-booking-extra-header>span:first-child
+    {
+        width:56px;
+        height:56px;
+        font-size:32px;
+        line-height:54px;
+    }
+    
+    .chbs-main .chbs-booking-extra-header>span:first-child+span
+    {
+        font-size:26px;
+        font-weight:400;
+        line-height:37px;
+        padding-left:20px;
+        text-transform:none;
+    }
+	
+	.chbs-main .chbs-booking-extra-header .chbs-show-more-button
+	{
+		top:-4px;
+		left:13px;
+		position:relative;
+	}
+    
+.chbs-main .chbs-booking-extra-list
+{
+
+}
+
+    .chbs-main .chbs-booking-extra-list>ul
+    {
+        width:100%;
+        display:table;
+    }
+    
+        .chbs-main .chbs-booking-extra-list>ul>li
+        {
+            display:table-row-group;
+        }
+        
+            .chbs-main .chbs-booking-extra-list>ul>li>div
+            {
+                border-style:solid;
+                display:table-cell;
+                vertical-align:middle;
+                padding:20px 0px 20px 0px;
+                border-width:1px 0px 0px 1px;
+            }
+            
+            .chbs-main .chbs-booking-extra-list>ul>li:last-child>div
+            {
+                border-bottom-width:1px;
+            }
+            
+            .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1
+            {
+                width:65%;
+                border-left-width:0px;
+                padding-right:20px;
+            }
+			
+				.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div.chbs-column-1-left
+				{
+					float:left;
+				}
+				
+					.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div.chbs-column-1-left>img
+					{
+						max-width:120px;
+					}
+				
+				.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div.chbs-column-1-right
+				{
+					
+				}
+				
+				.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div.chbs-column-1-left+div.chbs-column-1-right
+				{
+					margin-left:140px
+				}
+				
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-name,
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-price
+                {
+                    font-size:18px;
+                    font-weight:700;
+                    line-height:30px;
+                }
+
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-name
+                {
+                    margin-right:20px;
+                }
+                
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-price
+                {
+                    display:inline-block;
+                }
+                
+                    .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-price>span
+                    {
+                        padding-left:5px;
+                    }
+
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-description
+                {
+                    display:block;
+                    margin-top:5px;
+                }
+
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-description,
+				.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-description a,
+				.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-description a:hover
+                {
+                    font-size:16px;
+                    font-weight:300;
+                    line-height:26px;
+                }
+				
+				.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-note
+				{
+					display:block;
+					margin-top:10px;
+				}
+				
+					.chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1>div>.chbs-booking-form-extra-note textarea
+					{
+						width:100%;
+						height:82px;
+						font-size:16px;
+						font-weight:300;
+						line-height:26px;
+					}
+				
+            .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2
+            {
+                width:15%;
+                position:relative;
+            }
+            
+            .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2:empty
+            {
+                border-left-width:0px;
+            }
+
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2>.chbs-form-field
+                {
+                    border:none;
+                    padding-top:0px;
+                    position:static;
+                }
+                
+                    .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2>.chbs-form-field input
+                    {
+                        padding-bottom:0px;
+                    }
+                    
+                    
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section input[type="text"]
+                {
+                    padding-right:50px;
+                }
+                    
+                    .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button
+                    {
+                        right:0px;
+                        height:30px;
+                        display:block;
+                    }
+                    
+                    .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button:before
+                    {
+                        height:100%;
+                        line-height:100%;
+                    }
+
+                    .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button.chbs-meta-icon-plus
+                    {
+                        top:0px;
+                        margin-top:-30px;
+                        border-width:1px 0px 0px 1px;
+                    }
+
+                    .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button.chbs-meta-icon-minus
+                    {
+                        margin-bottom:-30px;
+                        border-width:1px 0px 1px 1px;
+                    }
+                
+            .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-3
+            {
+                width:20%;
+                text-align:right;
+                border-right-width:0px;
+            }
+            
+                .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-3>a
+                {
+                    display:inline-block;
+                }
+
+            .chbs-main .chbs-booking-extra-list>ul>li>div.chbs-column-1+.chbs-column-3
+            {
+                width:32%;
+            }
+            
+/******************************************************************************/
+/* Booking complete                                                           */
+/******************************************************************************/
+
+.chbs-main .chbs-booking-complete
+{
+    text-align:center;
+    margin:200px auto 200px auto !important;
+}
+
+    .chbs-main .chbs-booking-complete .chbs-meta-icon-tick
+    {
+        width:100px;
+        height:100px;
+        font-size:32px;
+        line-height:100px;
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .chbs-main .chbs-booking-complete .chbs-meta-icon-tick:before
+    {
+        z-index:3;
+        position:relative;
+    }
+        
+        .chbs-main .chbs-booking-complete .chbs-meta-icon-tick>div
+        {
+            top:0px;
+            z-index:1;
+            width:100%;
+            height:100%;
+            border-width:2px;
+            position:absolute;
+            border-style:solid;
+            border-radius:999em;
+        }
+    
+        .chbs-main .chbs-booking-complete .chbs-meta-icon-tick>div:first-child
+        {
+            left:0px;
+            z-index:2;
+        }
+        
+        .chbs-main .chbs-booking-complete .chbs-meta-icon-tick>div:first-child+div
+        {
+            left:10px;
+        }
+        
+    .chbs-main .chbs-booking-complete h3  
+    {
+        margin:0px;
+        padding:0px;
+        font-size:26px;
+        font-weight:400;
+        margin-top:30px;
+        line-height:37px;
+    }
+	
+	.chbs-main .chbs-booking-complete .chbs-booking-complete-payment 
+	{
+		
+	}
+	
+		.chbs-main .chbs-booking-complete .chbs-booking-complete-payment>div
+		{
+			display:none;
+			font-size:18px;
+			font-weight:300;
+			line-height:30px;
+		}
+		
+			.chbs-main .chbs-booking-complete .chbs-booking-complete-payment>div>a
+			{
+				display:inline-block;
+			}
+				
+			.chbs-main .chbs-booking-complete .chbs-booking-complete-payment>div>a,
+			.chbs-main .chbs-booking-complete .chbs-booking-complete-payment>div>p,
+			.chbs-main .chbs-booking-complete .chbs-booking-complete-payment>div>div
+			{
+				margin-top:30px;
+			}
+			
+			.chbs-main .chbs-booking-complete .chbs-booking-complete-payment>div>p
+			{
+				padding:0px;
+				max-width:80%;
+				margin-left:auto;
+				margin-right:auto;
+				text-align:center;
+			}
+			
+				.chbs-main .chbs-booking-complete .chbs-booking-complete-payment>div>div>span
+				{
+					font-weight:400;
+				}
+    
+.chbs-main form[name="chbs-form-stripe"]
+{
+    display:none !important;
+}
+
+/******************************************************************************/
+/* Responsive                                                                 */
+/******************************************************************************/
+
+    /**************************************************************************/
+    /* Responsive / Button                                                    */
+    /**************************************************************************/
+
+    .chbs-main.chbs-width-300 .chbs-button.chbs-button-style-1,
+    .chbs-main.chbs-width-480 .chbs-button.chbs-button-style-2
+    {
+        padding:10px 26px 12px 26px;
+    }
+
+    .chbs-main.chbs-width-300 .chbs-button.chbs-button-step-prev,
+    .chbs-main.chbs-width-480 .chbs-button.chbs-button-step-prev
+    {
+        padding:10px 26px 12px 18px;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-button.chbs-button-step-next,
+    .chbs-main.chbs-width-480 .chbs-button.chbs-button-step-next
+    {
+        padding:10px 18px 12px 26px;
+    }
+
+    /**************************************************************************/
+    /* Responsive / Layout                                                    */
+    /**************************************************************************/
+
+    .chbs-main.chbs-width-480 .chbs-layout-50x50 .chbs-layout-column-left,
+    .chbs-main.chbs-width-480 .chbs-layout-50x50 .chbs-layout-column-right,
+    .chbs-main.chbs-width-300 .chbs-layout-50x50 .chbs-layout-column-left,
+    .chbs-main.chbs-width-300 .chbs-layout-50x50 .chbs-layout-column-right,
+    .chbs-main.chbs-width-480 .chbs-layout-25x75>.chbs-layout-column-left,
+    .chbs-main.chbs-width-480 .chbs-layout-25x75>.chbs-layout-column-right,
+    .chbs-main.chbs-width-300 .chbs-layout-25x75>.chbs-layout-column-left,
+    .chbs-main.chbs-width-300 .chbs-layout-25x75>.chbs-layout-column-right,
+    .chbs-main.chbs-width-480 .chbs-layout-33x33x33>.chbs-layout-column-left,
+    .chbs-main.chbs-width-480 .chbs-layout-33x33x33>.chbs-layout-column-center,
+    .chbs-main.chbs-width-480 .chbs-layout-33x33x33>.chbs-layout-column-right,
+    .chbs-main.chbs-width-300 .chbs-layout-33x33x33>.chbs-layout-column-left,
+    .chbs-main.chbs-width-300 .chbs-layout-33x33x33>.chbs-layout-column-center,
+    .chbs-main.chbs-width-300 .chbs-layout-33x33x33>.chbs-layout-column-right,
+    .chbs-main.chbs-width-768 .chbs-main-content-step-2>.chbs-layout-25x75>.chbs-layout-column-left,
+    .chbs-main.chbs-width-768 .chbs-main-content-step-2>.chbs-layout-25x75>.chbs-layout-column-right
+    {
+        clear:both;
+        width:100%;
+        float:none;
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+    .chbs-main.chbs-width-480 .chbs-layout-50x50 .chbs-layout-column-left,
+    .chbs-main.chbs-width-300 .chbs-layout-50x50 .chbs-layout-column-left,
+    .chbs-main.chbs-width-480 .chbs-layout-33x33x33>.chbs-layout-column-left,
+    .chbs-main.chbs-width-480 .chbs-layout-33x33x33>.chbs-layout-column-center,
+    .chbs-main.chbs-width-300 .chbs-layout-33x33x33>.chbs-layout-column-left,
+    .chbs-main.chbs-width-300 .chbs-layout-33x33x33>.chbs-layout-column-center,
+    .chbs-main.chbs-width-768 .chbs-main-content-step-2>.chbs-layout-25x75>.chbs-layout-column-left
+    {
+        margin-bottom:40px;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-layout-25x75,
+    .chbs-main.chbs-width-480 .chbs-layout-25x75,
+    .chbs-main.chbs-width-768 .chbs-main-content-step-2 .chbs-layout-25x75
+    {
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-layout-25x75>.chbs-layout-column-left,
+    .chbs-main.chbs-width-480 .chbs-layout-25x75>.chbs-layout-column-left,
+    .chbs-main.chbs-width-768 .chbs-main-content-step-2 .chbs-layout-25x75>.chbs-layout-column-left
+    {
+        margin-top:40px;
+    }
+    
+    /**************************************************************************/
+    /* Responsive / Summary field                                             */
+    /**************************************************************************/
+
+    .chbs-main.chbs-width-300 .chbs-summary-field .chbs-layout-50x50 .chbs-layout-column-left,
+    .chbs-main.chbs-width-480 .chbs-summary-field .chbs-layout-50x50 .chbs-layout-column-left
+    {
+        margin-bottom:20px;
+    }
+    
+    /**************************************************************************/
+    /* Responsive / Main navigation                                           */
+    /**************************************************************************/
+
+    .chbs-main.chbs-width-300 .chbs-main-navigation-default
+    {
+        display:none;
+    }
+
+    .chbs-main.chbs-width-300 .chbs-main-navigation-responsive
+    {
+        display:block;
+    }
+
+    .chbs-main.chbs-width-300 .chbs-tab.ui-tabs .ui-tabs-nav>li,
+	.chbs-main.chbs-width-300.chbs-widget.chbs-widget-style-1 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li,
+    .chbs-main.chbs-width-300.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li,
+	.chbs-main.chbs-width-300.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li,
+ 	.chbs-main.chbs-width-300.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li
+    {
+        margin:0px;
+        float:none;
+        width:100%;
+    }
+    
+    .chbs-main.chbs-width-480.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+    .chbs-main.chbs-width-300.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+    .chbs-main.chbs-width-480.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+    .chbs-main.chbs-width-300.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a
+    {
+        margin-right:0px;
+    }
+
+        .chbs-main.chbs-width-300 .chbs-tab.ui-tabs .ui-tabs-nav>li>a
+        {
+            border-right-width:1px;
+        }
+
+    /**************************************************************************/
+    /* Responsive / Vehicle                                                   */
+    /**************************************************************************/
+
+    .chbs-main.chbs-width-480 .chbs-vehicle .chbs-vehicle-image
+    {
+        width:180px;
+    }
+    
+    .chbs-main.chbs-width-480 .chbs-vehicle .chbs-vehicle-image+.chbs-vehicle-content,
+    .chbs-main.chbs-width-480 .chbs-vehicle .chbs-vehicle-image+.chbs-vehicle-gallery+.chbs-vehicle-content
+    {
+        margin-left:200px;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-image
+    {
+        max-width:100%;
+        margin-bottom:20px;
+    }
+    
+        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content,
+        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-image+.chbs-vehicle-content,
+        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-image+.chbs-vehicle-gallery+.chbs-vehicle-content
+        {
+            margin:0px;
+        }
+    
+        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-header
+        {
+            clear:both;
+        }
+        
+            .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-header>span,
+            .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-header>a
+            {
+                width:100%;
+            }
+        
+            .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-header>span
+            {
+                display:block;
+            }
+            
+            .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-header>a
+            {
+                text-align:center;
+                padding:10px 26px 12px 26px;
+            }
+            
+            .chbs-main.chbs-width-480 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-header>a,
+            .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-header>a
+            {
+                padding:10px 26px 12px 26px;
+            }
+            
+        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-price
+        {
+            margin-top:15px;
+        }
+        
+            .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-price>span
+            {
+                
+            }
+            
+                .chbs-main.chbs-width-480 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-price>span>span:first-child,
+                .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-price>span>span:first-child
+                {
+                    font-size:28px;
+                }
+                
+        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta
+        {
+            
+        }
+        
+            .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div
+            {
+                
+            }
+            
+                .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-show-more-button
+                {
+                    width:60%;
+                }
+            
+                .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info
+                {
+                    width:40%;
+                }
+                
+                    .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div
+                    {
+                        
+                    }
+                    
+                        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span
+                        {
+                            float:left;
+                        }
+
+                        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span.chbs-meta-icon-bag
+                        {
+                            clear:both;
+                        }
+                        
+                        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span.chbs-meta-icon-bag,
+                        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span.chbs-meta-icon-people
+                        {
+                            margin-left:0px;
+                            margin-right:20px;
+                        }
+
+                        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span.chbs-circle
+                        {
+                            margin-right:0px;
+                        }
+                        
+                        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span.chbs-meta-icon-bag,
+                        .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content .chbs-vehicle-content-meta>div>.chbs-vehicle-content-meta-info>div>span.chbs-meta-icon-bag+span
+                        {
+                            margin-top:10px;
+                        }
+
+    .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul
+    {
+        width:100%;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul>li:last-child
+    {
+        border-bottom-width:1px;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-description>div>.chbs-vehicle-content-description-attribute>ul+ul>li:last-child
+    {
+        border-bottom-width:0px;
+    }
+                
+    .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-meta-icon-bag,
+    .chbs-main.chbs-width-300 .chbs-vehicle .chbs-vehicle-content>.chbs-vehicle-content-meta .chbs-meta-icon-people
+    {
+         font-size:24px;
+         margin-top:0px;
+    }
+    
+    /**************************************************************************/
+    /* Responsive / Button navigation                                         */
+    /**************************************************************************/    
+    
+    .chbs-main.chbs-width-300 .chbs-main-content-navigation-button
+    {
+        display:flex;
+        flex-direction:column;
+    }
+  
+        .chbs-main.chbs-width-300 .chbs-main-content-navigation-button .chbs-button.chbs-button-step-prev,
+        .chbs-main.chbs-width-300 .chbs-main-content-navigation-button .chbs-button.chbs-button-step-next
+        {
+            width:100%;
+            float:none;
+            text-align:center;
+        }
+
+        .chbs-main.chbs-width-300 .chbs-main-content-navigation-button .chbs-button.chbs-button-step-prev
+        {
+            order:2;
+            margin-top:10px;
+        }
+
+        .chbs-main.chbs-width-300 .chbs-main-content-navigation-button .chbs-button.chbs-button-step-next
+        {
+            order:1;
+            margin:10px 0px 0px 0px;
+        }
+        
+    /**************************************************************************/
+    /* Responsive / Booking extra                                             */
+    /**************************************************************************/
+
+    .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li,
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li
+    {
+        width:100%;
+        display:table;
+        border-bottom:0px;
+    }
+
+    .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li>div.chbs-column-1,
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-1
+    {
+        width:100%;
+        padding-right:0px;
+        display:table-caption;
+        border-bottom-width:0px;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-1,
+    .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li:first-child>div.chbs-column-1
+    {
+        border-top-width:0px;
+    }
+	
+	.chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-1>div
+	{
+		float:none;
+		margin:0px;
+		clear:both;
+	}
+
+	.chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-1>div.chbs-column-1-left
+	{
+		margin-bottom:20px;
+	}
+	
+		.chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-1>div.chbs-column-1-left>img
+		{
+			max-width:100%;
+		}
+	
+	.chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-1>div.chbs-column-1-left+div.chbs-column-1-right
+	{
+		margin:0px;
+	}
+		
+    .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li>div.chbs-column-2,
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-2,
+    .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li>div.chbs-column-3,
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-3
+    {
+        width:50%;
+        display:table-cell;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-2,
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-3
+    {
+        width:100%;
+        display:block;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-2
+    {
+        display:none;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li.chbs-booking-extra-list-item-quantity-enable>div.chbs-column-2
+    {
+        display:block;
+        border-right-width:1px;
+        border-bottom-width:1px;
+    }
+    
+    .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-3
+    {
+        border:none;
+    }
+    
+        .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-3 .chbs-button
+        {
+            width:100%;
+            text-align:center;
+        }
+     
+        .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button,
+        .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button
+        {
+            height:50px;
+            line-height:50px;
+        }
+
+        .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button.chbs-meta-icon-plus,
+        .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button.chbs-meta-icon-plus
+        {
+            top:-20px;
+        }
+
+        .chbs-main.chbs-width-480 .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button.chbs-meta-icon-minus,
+        .chbs-main.chbs-width-300 .chbs-booking-extra-list>ul>li>div.chbs-column-2 .chbs-quantity-section .chbs-quantity-section-button.chbs-meta-icon-minus
+        {
+            bottom:9px;
+        }
+        
+    /**************************************************************************/
+    /* Responsive / Add location                                              */
+    /* Responsive / Remove location                                           */
+    /**************************************************************************/
+    
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-location-switch+.chbs-form-field.chbs-form-field-location-switch .chbs-location-add,
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-location-switch+.chbs-form-field.chbs-form-field-location-switch .chbs-location-remove
+    {
+        right:-1px;
+    }
+
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-location-switch+.chbs-form-field.chbs-form-field-location-switch+.chbs-form-field.chbs-form-field-location-switch .chbs-location-add
+    {
+        top:13px;
+    }
+
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-location-switch+.chbs-form-field.chbs-form-field-location-switch+.chbs-form-field.chbs-form-field-location-switch .chbs-location-remove
+    {
+        top:48px;
+    }
+
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-location-switch input
+    {
+        padding-right:55px;
+    }
+
+    /**************************************************************************/
+    /* Responsive / Form field                                                */
+    /**************************************************************************/    
+    
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-width-50,
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-width-33,
+    .chbs-main.chbs-width-300 .chbs-form-field.chbs-form-field-width-25
+    {
+        width:100%;
+        float:none;
+        border-left-width:1px;
+    }
+
+    /**************************************************************************/
+    /* Responsive / Ride info                                                 */
+    /**************************************************************************/  
+
+    .chbs-main.chbs-width-300 .chbs-ride-info>div
+    {
+        width:100%;
+        display:block;
+    }
+
+    .chbs-main.chbs-width-300 .chbs-ride-info>div:first-child
+    {
+        border-right-width:0px;
+    }
+    
+    .chbs-main.chbs-width-768 .chbs-ride-info>div>span,
+    .chbs-main.chbs-width-300 .chbs-ride-info>div>span
+    {
+        float:none;
+        display:block;
+        text-align:center;
+        margin:15px 0px 0px 0px;
+    }
+
+    .chbs-main.chbs-width-768 .chbs-ride-info>div>span:first-child,
+    .chbs-main.chbs-width-300 .chbs-ride-info>div>span:first-child
+    {
+        margin-top:0px;
+    }
+    
+    .chbs-main.chbs-width-768 .chbs-ride-info>div>span:first-child+span,
+    .chbs-main.chbs-width-768 .chbs-ride-info>div>span:first-child+span+span,
+    .chbs-main.chbs-width-300 .chbs-ride-info>div>span:first-child+span,
+    .chbs-main.chbs-width-300 .chbs-ride-info>div>span:first-child+span+span
+    {
+        margin-left:0px;
+    } 
+    
+    /**************************************************************************/
+    /* Responsive / Vehicle filter                                            */
+    /**************************************************************************/
+
+    .chbs-main.chbs-width-300 .chbs-vehicle-filter .chbs-form-field.chbs-form-field-width-33+.chbs-form-field-width-33
+    {
+        border-left-width:1px;
+    }	
+    
+@media screen and (max-width:460px)
+{
+   
+/******************************************************************************/
+/* Responsive / Calendar								                      */
+/******************************************************************************/
+	
+.chbs-datepicker.ui-datepicker
+{
+    padding:15px 10px 15px 10px;
+}
+    
+.chbs-datepicker.ui-datepicker td a, 
+.chbs-datepicker.ui-datepicker td span
+{
+    width:34px;
+    height:34px;
+    line-height:34px;
+}
+    
+.chbs-datepicker.ui-datepicker td a.ui-state-hover
+{
+    line-height:30px
+}
+
+.chbs-datepicker.ui-datepicker td,
+.chbs-datepicker.ui-datepicker td a 
+{
+    font-size:14px;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-title 
+{
+    font-size:14px;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-next, 
+.chbs-datepicker.ui-datepicker .ui-datepicker-next-hover 
+{
+    margin-right:0px;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev,
+.chbs-datepicker.ui-datepicker .ui-datepicker-prev-hover
+{
+    margin-left:0px;
+}
+
+.chbs-datepicker.ui-datepicker .ui-datepicker-header 
+{
+    padding:0.7em 0px;
+}     
+
+/******************************************************************************/
+/* Responsive / Order view								                      */
+/******************************************************************************/
+
+html .chbs-wc-order-view .chbs-wc-order-view-section>div>div
+{
+	display:flex;
+	flex-direction:column;
+}
+
+	html .chbs-wc-order-view .chbs-wc-order-view-section>div>div
+	{
+		margin-top:10px;
+	}
+	
+	html .chbs-wc-order-view .chbs-wc-order-view-section>div>div:first-child
+	{
+		margin-top:0px;
+	}
+
+	html .chbs-wc-order-view .chbs-wc-order-view-section>div>div>div:first-child,
+	html .chbs-wc-order-view .chbs-wc-order-view-section>div>div>div:first-child+div
+	{
+		width:100%;
+	}
+}
+
+/******************************************************************************/
+/* WooCommerce                                                                */
+/******************************************************************************/
+
+html .woocommerce ul.chbs-product-meta-list,
+html .woocommerce ul.chbs-product-meta-list li
+{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+html .woocommerce ul.chbs-product-meta-list
+{
+	clear:both;
+	font-size:0.8em;
+	padding:10px 10px 10px 10px;
+}
+
+html .chbs-main #payment
+{
+    border-radius:0px;
+}
+
+html .chbs-main #payment,
+html .chbs-main #payment .form-row
+{
+    background:none;
+}
+
+html .chbs-main #payment .form-row
+{
+    padding:0px;
+    padding-top:20px;
+}
+
+html .chbs-main #payment .wc_payment_methods
+{
+    border:none;
+    padding:28px 20px 28px 20px;
+}
+
+    html .chbs-main #payment .wc_payment_methods .wc_payment_method
+    {
+        
+    }
+    
+        html .chbs-main #payment .wc_payment_methods .wc_payment_method input[type="radio"]
+        {
+            cursor:pointer;
+        }
+    
+        html .chbs-main #payment .wc_payment_methods .wc_payment_method label
+        {
+            
+        }
+    
+            html .chbs-main #payment .wc_payment_methods .wc_payment_method label a,
+            html .chbs-main #payment .wc_payment_methods .wc_payment_method label img
+            {
+                display:none;
+            }
+
+        html .chbs-main #payment .wc_payment_methods .wc_payment_method .payment_box
+        {
+            margin:0px;
+            border:none;
+            padding:0px;
+            position:static;
+            background:none;
+            padding-left:30px;
+        }
+
+        html .chbs-main #payment .payment_box::before
+        {
+            border:none;
+        }
+
+            html .chbs-main #payment .payment_box p
+            {
+                opacity:0.5;
+                margin-top:0px;
+                padding-top:5px;
+            }
+            
+.chbs-main .woocommerce-notice
+{
+    margin:0px;
+    padding:10px;
+    color:#FFFFFF;
+    font-weight:500;
+    border-style:solid;
+    border-width:0px 0px 0px 4px;
+}
+
+.chbs-main .woocommerce-notice.woocommerce-notice--success
+{
+    background:#4CBE83;
+    border-left-color:#4BA174;
+}
+.chbs-main .woocommerce-notice.woocommerce-notice--error
+{
+    background:#E37D66;
+    border-left-color:#B87668;    
+}
+
+/******************************************************************************/
+/* WooCommerce Order View                                                     */
+/******************************************************************************/
+
+.chbs-wc-order-view
+{
+	
+}
+
+	.chbs-wc-order-view .chbs-wc-order-view-section
+	{
+
+	}
+	
+	.chbs-wc-order-view .chbs-wc-order-view-section+.chbs-wc-order-view-section
+	{
+		margin-top:40px;
+	}
+	
+		.chbs-wc-order-view .chbs-wc-order-view-section>div
+		{
+			padding:20px;
+			border-width:1px;
+			border-style:solid;
+			border-color:#EAECEE;			
+		}
+	
+			.chbs-wc-order-view .chbs-wc-order-view-section>div>div
+			{
+				display:flex;
+				flex-direction:row;
+			}
+
+				.chbs-wc-order-view .chbs-wc-order-view-section>div>div>div:first-child
+				{
+					width:30%;
+				}
+
+				.chbs-wc-order-view .chbs-wc-order-view-section>div>div>div:first-child+div
+				{
+					width:70%;
+				}
+				
+			.chbs-wc-order-view .chbs-wc-order-view-section>div>div>ol>li
+			{
+				margin:0px;
+				padding:0px;
+				padding-left:10px;
+				margin-left:20px;
+			}
+
+/******************************************************************************/
+/* Fancybox                                                                   */
+/******************************************************************************/
+
+html .fancybox-inner img
+{
+    height:auto;
+    max-width:100%;
+}
+
+/******************************************************************************/
+/* Intl Tel Input                                                             */
+/******************************************************************************/
+
+.iti__flag
+{
+    background-image:url('./../media/image/public/flags.png');
+}
+
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi)
+{
+    .iti__flag
+    {
+        background-image:url('./../media/image/public/flags@2x.png');
+    }
+}
+
+html .iti.iti--allow-dropdown
+{
+    display:block;
+    margin:0px 20px 0px 20px;
+}
+
+html .iti--allow-dropdown .iti__flag-container
+{
+    top:1px;
+    height:27px;
+}
+
+html .iti__selected-flag
+{
+    padding:0px;
+}
+
+html body.rtl .iti.iti--allow-dropdown input
+{
+    padding-right:75px !important;
+}
+
+html .iti.iti--allow-dropdown input
+{
+	padding-left:75px !important;
+}
+
+html .iti__country.iti__highlight,
+html .iti--separate-dial-code .iti__selected-flag,
+html .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag
+{
+    background:transparent;
+}
+
+/******************************************************************************/
+/* Widget                                                                     */
+/******************************************************************************/
+
+.chbs-main.chbs-widget
+{
+    
+}
+
+    /**************************************************************************/
+    /* Widget / Style 1                                                       */
+    /**************************************************************************/
+
+    .chbs-main.chbs-widget.chbs-widget-style-1
+    {
+		background-color:transparent;
+    }
+    
+        .chbs-main.chbs-widget.chbs-widget-style-1 .chbs-button-widget-submit
+        {
+            width:auto;
+            float:right;
+            display:block;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-1 .chbs-main-content>div>div:last-child
+        {
+            margin-top:30px;
+        }
+    
+    /**************************************************************************/
+    /* Widget / Style 2                                                       */
+    /**************************************************************************/
+
+    .chbs-main.chbs-widget.chbs-widget-style-2,
+	.chbs-main.chbs-widget.chbs-widget-style-3,
+	.chbs-main.chbs-widget.chbs-widget-style-4
+    {
+		background-color:transparent;
+    }
+	
+		.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1>div:last-child
+		{
+			text-align:right;
+		}
+
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li,
+		.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li,
+		.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li
+        {
+            width:auto;
+            margin-right:10px;
+            margin-bottom:10px;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li:last-child,
+		.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li:last-child,
+		.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li:last-child
+        {
+            margin-right:0px;
+        }
+        
+            .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li>a,
+			.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li>a,
+            .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-nav>li>a
+            {
+                border:none;
+            }
+    
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+		.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+		.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel
+        {
+            display:flex;
+            flex-direction:row;
+        }
+		
+		.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel
+		{
+			border-width:1px;
+			border-style:solid;
+		}
+		
+		.chbs-main.chbs-widget.chbs-widget-style-2.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+		.chbs-main.chbs-widget.chbs-widget-style-4.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel
+		{
+			border:none;
+		}
+		
+        .chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel
+        {
+			border:none;
+			flex-wrap:wrap;
+			border-style:solid;
+			border-width:1px 0px 0px 1px;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*
+        {
+            flex-grow:1;
+            display:none;
+            flex-basis:200px;
+            border-top:none;
+            border-left:none;
+            border-bottom:none;
+        }
+		
+        .chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*
+        {
+            flex-grow:1;
+            border-top:none;
+            border-left:none;
+            flex-basis:300px;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-transfer-type,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-return-date-time
+        {
+            display:block;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-pickup-date-time,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-return-date-time
+        {
+            flex-basis:220px;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-return-date-time>div:first-child
+        {
+            border-left:none;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-return-date-time>div:first-child+div
+        {
+            border-right:none;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-pickup-date-time>div,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-return-date-time>div
+        {
+            width:55%;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-pickup-date-time>div+div,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-return-date-time>div+div
+        {
+            width:45%;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-location-switch>input
+        {
+            padding-right:0px;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-transfer-type
+        {
+            flex-basis:120px;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-extra-time
+        {
+            display:none;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>.chbs-form-field-location-autocomplete
+        {
+            flex-basis:120px;
+        }
+        
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field
+        {
+            margin-top:0px;
+            border-bottom:none;
+        }
+		
+		.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field
+		{
+			margin-top:0px;
+		}
+		
+			.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50
+			{
+				border-top:none;
+				border-left:none;
+			}
+			        
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child,
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child+div,
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs #panel-1.ui-tabs-panel>div:first-child+div+div,
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs #panel-2.ui-tabs-panel>div:first-child+div+div,
+        .chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child,
+        .chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+        .chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child+div,
+        .chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs #panel-1.ui-tabs-panel>div:first-child+div+div,
+        .chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs #panel-2.ui-tabs-panel>div:first-child+div+div,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child+div,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs #panel-1.ui-tabs-panel>div:first-child+div+div,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs #panel-2.ui-tabs-panel>div:first-child+div+div
+        {
+            display:block;
+        }
+        
+            .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,
+            .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div
+            {
+                height:100%;
+                border-top:none;
+				border-left:none;
+            }
+			
+			.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div
+			{
+				height:100%;
+			}
+        
+        .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child
+        {
+            max-width:200px;
+            text-align:center;
+        }
+        
+            .chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+			.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+            .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a            
+            {
+                width:auto;
+                display:block;
+                margin:20px 20px 0px 20px;
+            }
+            
+        .chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1>div+div
+        {
+            text-align:right;
+        }
+            
+            /******************************************************************/
+            /* Widget / Style 2 / Responsive                                  */
+            /******************************************************************/
+            
+            .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+            .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+            .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+            .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+            .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+            .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+            .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel,
+            .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel
+            {
+                flex-direction:column;
+            }
+			
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,
+                .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,
+                .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,	               
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>*	
+                {
+                    flex-basis:100%;
+                }
+				
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child                
+                {
+                    max-width:100%;
+                    text-align:right;
+					padding:0px 20px 20px 0px;
+                }
+				
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,                 
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4.chbs-border-none .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child                
+				{
+					padding:0px;
+				}
+				
+                    .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+                    .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+                    .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+                    .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+                    .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+                    .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,                    
+                    .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a,
+                    .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:last-child>a                    
+                    {
+                        display:inline-block;
+                    }
+
+                    .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,
+                    .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,
+                    .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,
+                    .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,
+                    .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,
+                    .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,                    
+                    .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div,
+                    .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel>div:first-child>div                
+                    {
+                        height:auto;
+                    }
+
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field,
+                .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field,
+                .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field,                  
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field                
+                {
+                    border:none;
+					border-bottom-width:1px;
+					border-bottom-style:solid;
+                }
+				
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child,
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child,
+                .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child,
+                .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child,                    
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field:first-child                
+                {
+                    border-top:none;
+                }
+
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-2 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50,
+	            .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-3 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50,
+	            .chbs-width-960.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50,
+                .chbs-width-768.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50,    
+                .chbs-width-480.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50,
+                .chbs-width-300.chbs-main.chbs-widget.chbs-widget-style-4 .chbs-main-content-step-1 .chbs-tab.ui-tabs .ui-tabs-panel .chbs-form-field.chbs-form-field-width-50            
+                {
+                    float:none;
+                    width:100%;
+                }
+				    
+/******************************************************************************/
+/* Bug fixes                                                                  */
+/******************************************************************************/
+
+#ui-datepicker-div,
+.ui-autocomplete,
+.ui-selectmenu-menu,
+.ui-timepicker-wrapper
+{
+	opacity:1 !important;
+    z-index:2147483647 !important;
+}
+
+.pac-container
+{
+    z-index:2147483647;
+}
