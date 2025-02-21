@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was dynamically generated on February 21, 2025 at 9:37 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="./default-sitemap.xsl?sitemap=chbs_booking_extra_c"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+	<url>
+		<loc><![CDATA[./chbs_booking_extra_c/distance/]]>/index.html</loc>
+		<lastmod><![CDATA[1970-01-01T00:00:00+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[./chbs_booking_extra_c/hourly/]]>/index.html</loc>
+		<lastmod><![CDATA[1970-01-01T00:00:00+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[./chbs_booking_extra_c/flat-rate/]]>/index.html</loc>
+		<lastmod><![CDATA[1970-01-01T00:00:00+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+</urlset>
