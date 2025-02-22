@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on February 21, 2025 at 9:37 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on February 22, 2025 at 2:58 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="./default-sitemap.xsl?sitemap=page"?>
 <urlset
@@ -9,7 +9,7 @@
 >
 	<url>
 		<loc><![CDATA[./]]>/index.html</loc>
-		<lastmod><![CDATA[2024-11-26T20:12:53+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-21T14:13:09+00:00]]></lastmod>
 		<changefreq><![CDATA[always]]></changefreq>
 		<priority><![CDATA[1]]></priority>
 		<image:image>
@@ -32,26 +32,14 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[./page-not-found/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-12-20T22:10:43+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[./terms-and-conditions/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-12-15T22:36:54+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[./refund_returns/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-12-15T21:45:36+00:00]]></lastmod>
+		<loc><![CDATA[./contact-us/]]>/index.html</loc>
+		<lastmod><![CDATA[2025-02-22T03:56:56+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[./services/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-12-13T17:25:04+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-21T14:28:50+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -69,6 +57,24 @@
 		<image:image>
 			<image:loc><![CDATA[./wp-content/uploads/2017/11/5-275-Thumbnail-Go-Local-Gallery-1.jpg]]></image:loc>
 		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[./page-not-found/]]>/index.html</loc>
+		<lastmod><![CDATA[2023-12-20T22:10:43+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[./terms-and-conditions/]]>/index.html</loc>
+		<lastmod><![CDATA[2023-12-15T22:36:54+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[./refund_returns/]]>/index.html</loc>
+		<lastmod><![CDATA[2023-12-15T21:45:36+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[./private-island-tours-by-locals-booking/]]>/index.html</loc>
@@ -106,12 +112,6 @@
 	<url>
 		<loc><![CDATA[./privacy-policy/]]>/index.html</loc>
 		<lastmod><![CDATA[2023-11-14T20:37:13+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[./contact-us/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-11-11T15:20:14+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>

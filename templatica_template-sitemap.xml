@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on February 21, 2025 at 9:37 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on February 22, 2025 at 2:58 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="./default-sitemap.xsl?sitemap=templatica_template"?>
 <urlset
@@ -7,6 +7,12 @@
 	xmlns:xhtml="http://www.w3.org/1999/xhtml"
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
+	<url>
+		<loc><![CDATA[./templatica_template/hero-unit/]]>/index.html</loc>
+		<lastmod><![CDATA[2025-02-22T04:19:01+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
 	<url>
 		<loc><![CDATA[./templatica_template/footer-bottom/]]>/index.html</loc>
 		<lastmod><![CDATA[2024-09-16T18:54:09+00:00]]></lastmod>
@@ -64,12 +70,6 @@
 	<url>
 		<loc><![CDATA[./templatica_template/header-bottom-5/]]>/index.html</loc>
 		<lastmod><![CDATA[2023-12-13T15:35:15+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-	</url>
-	<url>
-		<loc><![CDATA[./templatica_template/hero-unit/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-12-13T12:09:50+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 	</url>
