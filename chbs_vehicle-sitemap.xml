@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on February 22, 2025 at 2:58 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on February 25, 2025 at 12:19 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="./default-sitemap.xsl?sitemap=chbs_vehicle"?>
 <urlset
@@ -8,35 +8,8 @@
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
 	<url>
-		<loc><![CDATA[./car/chevrolet-suburban/]]>/index.html</loc>
-		<lastmod><![CDATA[2024-07-23T20:41:44+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc><![CDATA[./wp-content/uploads/2024/07/Chevrolet-Suburban-Go-Local-Vechiles-2.jpg]]></image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[./car/toyota-rush/]]>/index.html</loc>
-		<lastmod><![CDATA[2024-07-23T19:40:16+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc><![CDATA[./wp-content/uploads/2023/11/Rush-Go-Local-Vechiles.jpg]]></image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc><![CDATA[./car/land-cruiser/]]>/index.html</loc>
-		<lastmod><![CDATA[2024-07-23T19:31:06+00:00]]></lastmod>
-		<changefreq><![CDATA[weekly]]></changefreq>
-		<priority><![CDATA[0.7]]></priority>
-		<image:image>
-			<image:loc><![CDATA[./wp-content/uploads/2017/11/Land-Go-Local-Vechiles-1.jpg]]></image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc><![CDATA[./car/toyota-hiace-hi-roof/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-11-21T16:27:06+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-25T04:15:46+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -44,8 +17,26 @@
 		</image:image>
 	</url>
 	<url>
+		<loc><![CDATA[./car/mini-limo-wedding/]]>/index.html</loc>
+		<lastmod><![CDATA[2025-02-25T04:14:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[./wp-content/uploads/2017/11/Wedding-Go-Local-Vechiles.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[./car/land-cruiser/]]>/index.html</loc>
+		<lastmod><![CDATA[2025-02-25T04:13:39+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[./wp-content/uploads/2017/11/Land-Go-Local-Vechiles-1.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
 		<loc><![CDATA[./car/hyundai-h1/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-11-16T22:34:16+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-25T04:12:16+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -54,11 +45,29 @@
 	</url>
 	<url>
 		<loc><![CDATA[./car/kia-carnival/]]>/index.html</loc>
-		<lastmod><![CDATA[2023-11-16T22:32:33+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-25T04:10:53+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
 			<image:loc><![CDATA[./wp-content/uploads/2023/11/Carnival-Go-Local-Vechiles.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[./car/chevrolet-suburban/]]>/index.html</loc>
+		<lastmod><![CDATA[2025-02-25T04:06:17+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[./wp-content/uploads/2024/07/Chevrolet-Suburban-Go-Local-Vechiles-2.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[./car/toyota-rush/]]>/index.html</loc>
+		<lastmod><![CDATA[2025-02-25T04:05:21+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[./wp-content/uploads/2023/11/Rush-Go-Local-Vechiles.jpg]]></image:loc>
 		</image:image>
 	</url>
 </urlset>

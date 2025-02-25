@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on February 22, 2025 at 2:58 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on February 25, 2025 at 12:19 am by All in One SEO v4.7.9.1 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="./default-sitemap.xsl?sitemap=root"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
 		<loc><![CDATA[./page-sitemap.xml]]></loc>
-		<lastmod><![CDATA[2025-02-22T03:56:56+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-24T18:11:00+00:00]]></lastmod>
 	</sitemap>
 	<sitemap>
 		<loc><![CDATA[./product-sitemap.xml]]></loc>
@@ -13,11 +13,11 @@
 	</sitemap>
 	<sitemap>
 		<loc><![CDATA[./chbs_vehicle-sitemap.xml]]></loc>
-		<lastmod><![CDATA[2024-07-23T20:41:44+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-25T04:15:46+00:00]]></lastmod>
 	</sitemap>
 	<sitemap>
 		<loc><![CDATA[./templatica_template-sitemap.xml]]></loc>
-		<lastmod><![CDATA[2025-02-22T04:19:01+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-23T18:13:53+00:00]]></lastmod>
 	</sitemap>
 	<sitemap>
 		<loc><![CDATA[./product_cat-sitemap.xml]]></loc>
@@ -33,6 +33,6 @@
 	</sitemap>
 	<sitemap>
 		<loc><![CDATA[./chbs_vehicle_c-sitemap.xml]]></loc>
-		<lastmod><![CDATA[2024-07-23T20:41:44+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-02-25T04:15:46+00:00]]></lastmod>
 	</sitemap>
 </sitemapindex>
